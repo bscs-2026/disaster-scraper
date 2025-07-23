@@ -1,4 +1,4 @@
-
+#!/Library/Frameworks/Python.framework/Versions/3.13/bin/python3
 import os
 import time
 import logging
@@ -29,13 +29,13 @@ PAGES = [
 
 HASHTAGS = [
     'FloodAlert', 'BahaPH', 'StreetFloodAlert',
-    'LandslideAlert', 'FireAlert', 'EarthquakeAlert', 'EarthquakePH'
+    'LandslideAlert', 'LandslidePH', 'FireAlert', 'EarthquakeAlert', 'EarthquakePH'
 ]
 
 # Keywords for Filtering 
 KEYWORDS = [
     '#FloodAlert', '#BahaPH', '#StreetFloodAlert',
-    '#LandslideAlert', '#FireAlert', '#EarthquakeAlert', '#EarthquakePH',
+    '#LandslideAlert', '#LandslidePH' '#FireAlert', '#EarthquakeAlert', '#EarthquakePH',
 
     # English
     'earthquake', 'aftershock', 'ground shaking', 'seismic',

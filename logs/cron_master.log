@@ -1,0 +1,609 @@
+/Library/Developer/CommandLineTools/usr/bin/python3: can't open file './socmed_disaster_scraper.py': [Errno 1] Operation not permitted
+/Library/Developer/CommandLineTools/usr/bin/python3: can't open file './socmed_disaster_scraper.py': [Errno 1] Operation not permitted
+Traceback (most recent call last):
+  File "/Users/prettyfaith/Documents/Github/thesis-disaster-chatbot/./socmed_disaster_scraper.py", line 6, in <module>
+    from selenium import webdriver
+ModuleNotFoundError: No module named 'selenium'
+Traceback (most recent call last):
+  File "/Users/prettyfaith/Documents/Github/thesis-disaster-chatbot/./socmed_disaster_scraper.py", line 6, in <module>
+    from selenium import webdriver
+ModuleNotFoundError: No module named 'selenium'
+Traceback (most recent call last):
+  File "/Users/prettyfaith/Documents/Github/thesis-disaster-chatbot/./socmed_disaster_scraper.py", line 6, in <module>
+    from selenium import webdriver
+ModuleNotFoundError: No module named 'selenium'
+Traceback (most recent call last):
+  File "/Users/prettyfaith/Documents/Github/thesis-disaster-chatbot/./socmed_disaster_scraper.py", line 6, in <module>
+    from selenium import webdriver
+ModuleNotFoundError: No module named 'selenium'
+2025-07-23 01:00:06,040 [INFO] *** Scraping PAGE feed: https://www.facebook.com/abscbnNEWS/posts
+Traceback (most recent call last):
+  File "/Users/prettyfaith/Documents/Github/thesis-disaster-chatbot/socmed_disaster_scraper.py", line 194, in <module>
+    scroll_page()
+    ~~~~~~~~~~~^^
+  File "/Users/prettyfaith/Documents/Github/thesis-disaster-chatbot/socmed_disaster_scraper.py", line 85, in scroll_page
+    last = driver.execute_script("return document.body.scrollHeight")
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 528, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=138.0.7204.158)
+Stacktrace:
+0   chromedriver                        0x00000001010d355c cxxbridge1$str$ptr + 2731064
+1   chromedriver                        0x00000001010cb454 cxxbridge1$str$ptr + 2698032
+2   chromedriver                        0x0000000100c1a3f8 cxxbridge1$string$len + 90664
+3   chromedriver                        0x0000000100c03dc8 chromedriver + 196040
+4   chromedriver                        0x0000000100c26f14 cxxbridge1$string$len + 142660
+5   chromedriver                        0x0000000100c899bc cxxbridge1$string$len + 546796
+6   chromedriver                        0x0000000100ca2638 cxxbridge1$string$len + 648296
+7   chromedriver                        0x0000000100c55a0c cxxbridge1$string$len + 333884
+8   chromedriver                        0x00000001010965e0 cxxbridge1$str$ptr + 2481340
+9   chromedriver                        0x0000000101099848 cxxbridge1$str$ptr + 2494244
+10  chromedriver                        0x0000000101077234 cxxbridge1$str$ptr + 2353424
+11  chromedriver                        0x000000010109a104 cxxbridge1$str$ptr + 2496480
+12  chromedriver                        0x00000001010682e4 cxxbridge1$str$ptr + 2292160
+13  chromedriver                        0x00000001010b9ff8 cxxbridge1$str$ptr + 2627284
+14  chromedriver                        0x00000001010ba184 cxxbridge1$str$ptr + 2627680
+15  chromedriver                        0x00000001010cb090 cxxbridge1$str$ptr + 2697068
+16  libsystem_pthread.dylib             0x000000019ae32c0c _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000019ae2db80 thread_start + 8
+
+2025-07-23 06:15:03,544 [INFO] *** Scraping PAGE feed: https://www.facebook.com/abscbnNEWS/posts
+2025-07-23 06:15:13,662 [INFO] [Page] abscbnNEWS: found 7 articles
+2025-07-23 06:15:14,086 [INFO] [Page] abscbnNEWS: appended 1 posts
+2025-07-23 06:15:14,087 [INFO] *** Scraping PAGE feed: https://www.facebook.com/rapplerdotcom/posts
+2025-07-23 06:15:23,824 [INFO] [Page] rapplerdotcom: found 4 articles
+2025-07-23 06:15:24,029 [INFO] [Page] rapplerdotcom: appended 1 posts
+2025-07-23 06:15:24,029 [INFO] *** Scraping PAGE feed: https://www.facebook.com/gmanews/posts
+2025-07-23 06:15:33,269 [INFO] [Page] gmanews: found 3 articles
+2025-07-23 06:15:33,368 [INFO] [Page] gmanews: appended 1 posts
+2025-07-23 06:15:33,368 [INFO] *** Scraping PAGE feed: https://www.facebook.com/manilabulletin/posts
+2025-07-23 06:15:42,665 [INFO] [Page] manilabulletin: found 4 articles
+2025-07-23 06:15:42,825 [INFO] [Page] manilabulletin: appended 0 posts
+2025-07-23 06:15:42,825 [INFO] *** Scraping PAGE feed: https://www.facebook.com/sunstarphilippines/posts
+2025-07-23 06:15:53,151 [INFO] [Page] sunstarphilippines: found 4 articles
+2025-07-23 06:15:53,254 [INFO] [Page] sunstarphilippines: appended 0 posts
+2025-07-23 06:15:53,255 [INFO] *** Scraping PAGE feed: https://www.facebook.com/PhilstarNews/posts
+2025-07-23 06:16:02,835 [INFO] [Page] PhilstarNews: found 4 articles
+2025-07-23 06:16:02,956 [INFO] [Page] PhilstarNews: appended 0 posts
+2025-07-23 06:16:02,956 [INFO] *** Scraping PAGE feed: https://www.facebook.com/inquirerdotnet/posts
+2025-07-23 06:16:12,514 [INFO] [Page] inquirerdotnet: found 3 articles
+2025-07-23 06:16:12,601 [INFO] [Page] inquirerdotnet: appended 1 posts
+2025-07-23 06:16:12,601 [INFO] *** Scraping PAGE feed: https://www.facebook.com/pagasa.dost.gov.ph/posts
+2025-07-23 06:16:22,199 [INFO] [Page] pagasa.dost.gov.ph: found 3 articles
+2025-07-23 06:16:22,279 [INFO] [Page] pagasa.dost.gov.ph: appended 0 posts
+2025-07-23 06:16:22,279 [INFO] *** Scraping PAGE feed: https://www.facebook.com/davaocitydrmmc/posts
+2025-07-23 06:16:31,383 [INFO] [Page] davaocitydrmmc: found 0 articles
+2025-07-23 06:16:31,384 [INFO] [Page] davaocitydrmmc: appended 0 posts
+2025-07-23 06:16:31,384 [INFO] *** Scraping PAGE feed: https://www.facebook.com/NDRRMC/posts
+2025-07-23 06:16:40,860 [INFO] [Page] NDRRMC: found 4 articles
+2025-07-23 06:16:42,248 [INFO] [Page] NDRRMC: appended 1 posts
+2025-07-23 06:16:42,248 [INFO] *** Scraping PAGE feed: https://www.facebook.com/UNTVNewsRescue/posts
+2025-07-23 06:16:51,814 [INFO] [Page] UNTVNewsRescue: found 3 articles
+2025-07-23 06:16:51,881 [INFO] [Page] UNTVNewsRescue: appended 0 posts
+2025-07-23 06:16:51,882 [INFO] *** Scraping PAGE feed: https://www.facebook.com/PIAgovernment/posts
+2025-07-23 06:17:00,666 [INFO] [Page] PIAgovernment: found 0 articles
+2025-07-23 06:17:00,666 [INFO] [Page] PIAgovernment: appended 0 posts
+2025-07-23 06:17:00,666 [INFO] *** Scraping PAGE feed: https://www.facebook.com/DavaoDRRMO/posts
+2025-07-23 06:17:10,107 [INFO] [Page] DavaoDRRMO: found 3 articles
+2025-07-23 06:17:11,879 [INFO] [Page] DavaoDRRMO: appended 0 posts
+2025-07-23 06:17:11,879 [INFO] *** Scraping PAGE feed: https://www.facebook.com/sunstardavaonews/posts
+2025-07-23 06:17:21,486 [INFO] [Page] sunstardavaonews: found 4 articles
+2025-07-23 06:17:22,972 [INFO] [Page] sunstardavaonews: appended 0 posts
+2025-07-23 06:17:22,972 [INFO] *** Scraping PAGE feed: https://www.facebook.com/profile.php?id=61568208630146/posts
+2025-07-23 06:17:32,704 [INFO] [Page] profile.php?id=61568208630146: found 0 articles
+2025-07-23 06:17:32,704 [INFO] [Page] profile.php?id=61568208630146: appended 0 posts
+2025-07-23 06:17:32,704 [INFO] *** Scraping PAGE feed: https://www.facebook.com/PHIVOLCS/posts
+2025-07-23 06:17:42,157 [INFO] [Page] PHIVOLCS: found 3 articles
+2025-07-23 06:17:44,143 [INFO] [Page] PHIVOLCS: appended 1 posts
+2025-07-23 06:17:44,143 [INFO]  - Searching hashtag: #FloodAlert
+2025-07-23 06:17:54,810 [INFO] [Hashtag] #FloodAlert: found 3 articles
+2025-07-23 06:17:55,132 [INFO] [Hashtag] #FloodAlert: appended 0 posts
+2025-07-23 06:17:55,132 [INFO]  - Searching hashtag: #BahaPH
+2025-07-23 06:18:05,614 [INFO] [Hashtag] #BahaPH: found 3 articles
+2025-07-23 06:18:07,115 [INFO] [Hashtag] #BahaPH: appended 0 posts
+2025-07-23 06:18:07,115 [INFO]  - Searching hashtag: #StreetFloodAlert
+2025-07-23 06:18:17,657 [INFO] [Hashtag] #StreetFloodAlert: found 3 articles
+2025-07-23 06:18:19,305 [INFO] [Hashtag] #StreetFloodAlert: appended 0 posts
+2025-07-23 06:18:19,305 [INFO]  - Searching hashtag: #LandslideAlert
+2025-07-23 06:18:29,924 [INFO] [Hashtag] #LandslideAlert: found 3 articles
+2025-07-23 06:18:30,245 [INFO] [Hashtag] #LandslideAlert: appended 0 posts
+2025-07-23 06:18:30,245 [INFO]  - Searching hashtag: #LandslidePH
+2025-07-23 06:18:40,733 [INFO] [Hashtag] #LandslidePH: found 3 articles
+2025-07-23 06:18:42,385 [INFO] [Hashtag] #LandslidePH: appended 0 posts
+2025-07-23 06:18:42,386 [INFO]  - Searching hashtag: #FireAlert
+2025-07-23 06:18:52,752 [INFO] [Hashtag] #FireAlert: found 3 articles
+2025-07-23 06:18:54,440 [INFO] [Hashtag] #FireAlert: appended 0 posts
+2025-07-23 06:18:54,440 [INFO]  - Searching hashtag: #EarthquakeAlert
+2025-07-23 06:19:04,676 [INFO] [Hashtag] #EarthquakeAlert: found 3 articles
+2025-07-23 06:19:04,850 [INFO] [Hashtag] #EarthquakeAlert: appended 0 posts
+2025-07-23 06:19:04,850 [INFO]  - Searching hashtag: #EarthquakePH
+2025-07-23 06:19:15,121 [INFO] [Hashtag] #EarthquakePH: found 3 articles
+2025-07-23 06:19:16,643 [INFO] [Hashtag] #EarthquakePH: appended 0 posts
+2025-07-23 06:19:17,092 [INFO] ✅ Done! rows saved: 81
+2025-07-23 06:30:03,465 [INFO] *** Scraping PAGE feed: https://www.facebook.com/abscbnNEWS/posts
+2025-07-23 06:30:13,685 [INFO] [Page] abscbnNEWS: found 4 articles
+2025-07-23 06:30:13,819 [INFO] [Page] abscbnNEWS: appended 0 posts
+2025-07-23 06:30:13,820 [INFO] *** Scraping PAGE feed: https://www.facebook.com/rapplerdotcom/posts
+2025-07-23 06:30:23,183 [INFO] [Page] rapplerdotcom: found 4 articles
+2025-07-23 06:30:23,380 [INFO] [Page] rapplerdotcom: appended 1 posts
+2025-07-23 06:30:23,380 [INFO] *** Scraping PAGE feed: https://www.facebook.com/gmanews/posts
+2025-07-23 06:30:33,266 [INFO] [Page] gmanews: found 4 articles
+2025-07-23 06:30:33,388 [INFO] [Page] gmanews: appended 0 posts
+2025-07-23 06:30:33,388 [INFO] *** Scraping PAGE feed: https://www.facebook.com/manilabulletin/posts
+2025-07-23 06:30:43,040 [INFO] [Page] manilabulletin: found 4 articles
+2025-07-23 06:30:43,189 [INFO] [Page] manilabulletin: appended 0 posts
+2025-07-23 06:30:43,189 [INFO] *** Scraping PAGE feed: https://www.facebook.com/sunstarphilippines/posts
+2025-07-23 06:30:53,732 [INFO] [Page] sunstarphilippines: found 4 articles
+2025-07-23 06:30:53,833 [INFO] [Page] sunstarphilippines: appended 0 posts
+2025-07-23 06:30:53,833 [INFO] *** Scraping PAGE feed: https://www.facebook.com/PhilstarNews/posts
+2025-07-23 06:31:03,486 [INFO] [Page] PhilstarNews: found 3 articles
+2025-07-23 06:31:03,554 [INFO] [Page] PhilstarNews: appended 0 posts
+2025-07-23 06:31:03,554 [INFO] *** Scraping PAGE feed: https://www.facebook.com/inquirerdotnet/posts
+2025-07-23 06:31:14,396 [INFO] [Page] inquirerdotnet: found 3 articles
+2025-07-23 06:31:14,504 [INFO] [Page] inquirerdotnet: appended 0 posts
+2025-07-23 06:31:14,504 [INFO] *** Scraping PAGE feed: https://www.facebook.com/pagasa.dost.gov.ph/posts
+2025-07-23 06:31:24,261 [INFO] [Page] pagasa.dost.gov.ph: found 4 articles
+2025-07-23 06:31:24,377 [INFO] [Page] pagasa.dost.gov.ph: appended 0 posts
+2025-07-23 06:31:24,378 [INFO] *** Scraping PAGE feed: https://www.facebook.com/davaocitydrmmc/posts
+2025-07-23 06:31:33,312 [INFO] [Page] davaocitydrmmc: found 0 articles
+2025-07-23 06:31:33,313 [INFO] [Page] davaocitydrmmc: appended 0 posts
+2025-07-23 06:31:33,313 [INFO] *** Scraping PAGE feed: https://www.facebook.com/NDRRMC/posts
+2025-07-23 06:31:43,014 [INFO] [Page] NDRRMC: found 4 articles
+2025-07-23 06:31:44,305 [INFO] [Page] NDRRMC: appended 1 posts
+2025-07-23 06:31:44,305 [INFO] *** Scraping PAGE feed: https://www.facebook.com/UNTVNewsRescue/posts
+2025-07-23 06:31:53,533 [INFO] [Page] UNTVNewsRescue: found 4 articles
+2025-07-23 06:31:53,674 [INFO] [Page] UNTVNewsRescue: appended 1 posts
+2025-07-23 06:31:53,674 [INFO] *** Scraping PAGE feed: https://www.facebook.com/PIAgovernment/posts
+2025-07-23 06:32:02,233 [INFO] [Page] PIAgovernment: found 0 articles
+2025-07-23 06:32:02,233 [INFO] [Page] PIAgovernment: appended 0 posts
+2025-07-23 06:32:02,234 [INFO] *** Scraping PAGE feed: https://www.facebook.com/DavaoDRRMO/posts
+2025-07-23 06:32:12,410 [INFO] [Page] DavaoDRRMO: found 3 articles
+2025-07-23 06:32:14,029 [INFO] [Page] DavaoDRRMO: appended 0 posts
+2025-07-23 06:32:14,029 [INFO] *** Scraping PAGE feed: https://www.facebook.com/sunstardavaonews/posts
+2025-07-23 06:32:23,656 [INFO] [Page] sunstardavaonews: found 4 articles
+2025-07-23 06:32:25,028 [INFO] [Page] sunstardavaonews: appended 0 posts
+2025-07-23 06:32:25,028 [INFO] *** Scraping PAGE feed: https://www.facebook.com/profile.php?id=61568208630146/posts
+2025-07-23 06:32:34,571 [INFO] [Page] profile.php?id=61568208630146: found 0 articles
+2025-07-23 06:32:34,572 [INFO] [Page] profile.php?id=61568208630146: appended 0 posts
+2025-07-23 06:32:34,572 [INFO] *** Scraping PAGE feed: https://www.facebook.com/PHIVOLCS/posts
+2025-07-23 06:32:44,403 [INFO] [Page] PHIVOLCS: found 3 articles
+2025-07-23 06:32:46,286 [INFO] [Page] PHIVOLCS: appended 1 posts
+2025-07-23 06:32:46,286 [INFO]  - Searching hashtag: #FloodAlert
+2025-07-23 06:32:57,235 [INFO] [Hashtag] #FloodAlert: found 3 articles
+2025-07-23 06:32:57,430 [INFO] [Hashtag] #FloodAlert: appended 0 posts
+2025-07-23 06:32:57,431 [INFO]  - Searching hashtag: #BahaPH
+2025-07-23 06:33:07,527 [INFO] [Hashtag] #BahaPH: found 3 articles
+2025-07-23 06:33:09,046 [INFO] [Hashtag] #BahaPH: appended 0 posts
+2025-07-23 06:33:09,047 [INFO]  - Searching hashtag: #StreetFloodAlert
+2025-07-23 06:33:19,102 [INFO] [Hashtag] #StreetFloodAlert: found 3 articles
+2025-07-23 06:33:20,793 [INFO] [Hashtag] #StreetFloodAlert: appended 0 posts
+2025-07-23 06:33:20,794 [INFO]  - Searching hashtag: #LandslideAlert
+2025-07-23 06:33:30,654 [INFO] [Hashtag] #LandslideAlert: found 3 articles
+2025-07-23 06:33:30,911 [INFO] [Hashtag] #LandslideAlert: appended 0 posts
+2025-07-23 06:33:30,911 [INFO]  - Searching hashtag: #LandslidePH
+2025-07-23 06:33:41,097 [INFO] [Hashtag] #LandslidePH: found 3 articles
+2025-07-23 06:33:42,538 [INFO] [Hashtag] #LandslidePH: appended 0 posts
+2025-07-23 06:33:42,538 [INFO]  - Searching hashtag: #FireAlert
+2025-07-23 06:33:55,911 [INFO] [Hashtag] #FireAlert: found 3 articles
+2025-07-23 06:33:57,559 [INFO] [Hashtag] #FireAlert: appended 0 posts
+2025-07-23 06:33:57,559 [INFO]  - Searching hashtag: #EarthquakeAlert
+2025-07-23 06:34:08,136 [INFO] [Hashtag] #EarthquakeAlert: found 3 articles
+2025-07-23 06:34:08,286 [INFO] [Hashtag] #EarthquakeAlert: appended 0 posts
+2025-07-23 06:34:08,286 [INFO]  - Searching hashtag: #EarthquakePH
+2025-07-23 06:34:17,495 [INFO] [Hashtag] #EarthquakePH: found 3 articles
+2025-07-23 06:34:18,867 [INFO] [Hashtag] #EarthquakePH: appended 0 posts
+2025-07-23 06:34:19,242 [INFO] ✅ Done! rows saved: 82
+2025-07-23 06:45:02,796 [INFO] *** Scraping PAGE feed: https://www.facebook.com/abscbnNEWS/posts
+2025-07-23 06:45:12,634 [INFO] [Page] abscbnNEWS: found 4 articles
+2025-07-23 06:45:12,758 [INFO] [Page] abscbnNEWS: appended 0 posts
+2025-07-23 06:45:12,758 [INFO] *** Scraping PAGE feed: https://www.facebook.com/rapplerdotcom/posts
+2025-07-23 06:45:22,540 [INFO] [Page] rapplerdotcom: found 4 articles
+2025-07-23 06:45:22,644 [INFO] [Page] rapplerdotcom: appended 0 posts
+2025-07-23 06:45:22,644 [INFO] *** Scraping PAGE feed: https://www.facebook.com/gmanews/posts
+2025-07-23 06:45:31,832 [INFO] [Page] gmanews: found 3 articles
+2025-07-23 06:45:31,910 [INFO] [Page] gmanews: appended 0 posts
+2025-07-23 06:45:31,910 [INFO] *** Scraping PAGE feed: https://www.facebook.com/manilabulletin/posts
+2025-07-23 06:45:41,238 [INFO] [Page] manilabulletin: found 4 articles
+2025-07-23 06:45:41,393 [INFO] [Page] manilabulletin: appended 0 posts
+2025-07-23 06:45:41,393 [INFO] *** Scraping PAGE feed: https://www.facebook.com/sunstarphilippines/posts
+2025-07-23 06:45:50,836 [INFO] [Page] sunstarphilippines: found 4 articles
+2025-07-23 06:45:50,933 [INFO] [Page] sunstarphilippines: appended 0 posts
+2025-07-23 06:45:50,933 [INFO] *** Scraping PAGE feed: https://www.facebook.com/PhilstarNews/posts
+2025-07-23 06:46:00,129 [INFO] [Page] PhilstarNews: found 3 articles
+2025-07-23 06:46:01,375 [INFO] [Page] PhilstarNews: appended 0 posts
+2025-07-23 06:46:01,375 [INFO] *** Scraping PAGE feed: https://www.facebook.com/inquirerdotnet/posts
+2025-07-23 06:46:11,504 [INFO] [Page] inquirerdotnet: found 3 articles
+2025-07-23 06:46:11,610 [INFO] [Page] inquirerdotnet: appended 0 posts
+2025-07-23 06:46:11,610 [INFO] *** Scraping PAGE feed: https://www.facebook.com/pagasa.dost.gov.ph/posts
+2025-07-23 06:46:21,022 [INFO] [Page] pagasa.dost.gov.ph: found 4 articles
+2025-07-23 06:46:21,132 [INFO] [Page] pagasa.dost.gov.ph: appended 0 posts
+2025-07-23 06:46:21,133 [INFO] *** Scraping PAGE feed: https://www.facebook.com/davaocitydrmmc/posts
+2025-07-23 06:46:29,836 [INFO] [Page] davaocitydrmmc: found 0 articles
+2025-07-23 06:46:29,837 [INFO] [Page] davaocitydrmmc: appended 0 posts
+2025-07-23 06:46:29,837 [INFO] *** Scraping PAGE feed: https://www.facebook.com/NDRRMC/posts
+2025-07-23 06:46:39,026 [INFO] [Page] NDRRMC: found 3 articles
+2025-07-23 06:46:39,207 [INFO] [Page] NDRRMC: appended 1 posts
+2025-07-23 06:46:39,207 [INFO] *** Scraping PAGE feed: https://www.facebook.com/UNTVNewsRescue/posts
+2025-07-23 06:46:48,422 [INFO] [Page] UNTVNewsRescue: found 3 articles
+2025-07-23 06:46:49,630 [INFO] [Page] UNTVNewsRescue: appended 1 posts
+2025-07-23 06:46:49,630 [INFO] *** Scraping PAGE feed: https://www.facebook.com/PIAgovernment/posts
+2025-07-23 06:46:58,177 [INFO] [Page] PIAgovernment: found 0 articles
+2025-07-23 06:46:58,177 [INFO] [Page] PIAgovernment: appended 0 posts
+2025-07-23 06:46:58,177 [INFO] *** Scraping PAGE feed: https://www.facebook.com/DavaoDRRMO/posts
+2025-07-23 06:47:07,229 [INFO] [Page] DavaoDRRMO: found 3 articles
+2025-07-23 06:47:08,650 [INFO] [Page] DavaoDRRMO: appended 0 posts
+2025-07-23 06:47:08,651 [INFO] *** Scraping PAGE feed: https://www.facebook.com/sunstardavaonews/posts
+2025-07-23 06:47:17,929 [INFO] [Page] sunstardavaonews: found 4 articles
+2025-07-23 06:47:19,173 [INFO] [Page] sunstardavaonews: appended 0 posts
+2025-07-23 06:47:19,174 [INFO] *** Scraping PAGE feed: https://www.facebook.com/profile.php?id=61568208630146/posts
+2025-07-23 06:47:28,128 [INFO] [Page] profile.php?id=61568208630146: found 0 articles
+2025-07-23 06:47:28,128 [INFO] [Page] profile.php?id=61568208630146: appended 0 posts
+2025-07-23 06:47:28,128 [INFO] *** Scraping PAGE feed: https://www.facebook.com/PHIVOLCS/posts
+2025-07-23 06:47:37,515 [INFO] [Page] PHIVOLCS: found 3 articles
+2025-07-23 06:47:39,313 [INFO] [Page] PHIVOLCS: appended 1 posts
+2025-07-23 06:47:39,313 [INFO]  - Searching hashtag: #FloodAlert
+2025-07-23 06:47:50,191 [INFO] [Hashtag] #FloodAlert: found 3 articles
+2025-07-23 06:47:50,418 [INFO] [Hashtag] #FloodAlert: appended 0 posts
+2025-07-23 06:47:50,419 [INFO]  - Searching hashtag: #BahaPH
+2025-07-23 06:48:01,958 [INFO] [Hashtag] #BahaPH: found 3 articles
+2025-07-23 06:48:03,500 [INFO] [Hashtag] #BahaPH: appended 0 posts
+2025-07-23 06:48:03,500 [INFO]  - Searching hashtag: #StreetFloodAlert
+2025-07-23 06:48:14,978 [INFO] [Hashtag] #StreetFloodAlert: found 3 articles
+2025-07-23 06:48:16,568 [INFO] [Hashtag] #StreetFloodAlert: appended 0 posts
+2025-07-23 06:48:16,568 [INFO]  - Searching hashtag: #LandslideAlert
+2025-07-23 06:48:27,589 [INFO] [Hashtag] #LandslideAlert: found 3 articles
+2025-07-23 06:48:27,837 [INFO] [Hashtag] #LandslideAlert: appended 0 posts
+2025-07-23 06:48:27,837 [INFO]  - Searching hashtag: #LandslidePH
+2025-07-23 06:48:38,228 [INFO] [Hashtag] #LandslidePH: found 3 articles
+2025-07-23 06:48:39,733 [INFO] [Hashtag] #LandslidePH: appended 0 posts
+2025-07-23 06:48:39,734 [INFO]  - Searching hashtag: #FireAlert
+2025-07-23 06:48:49,961 [INFO] [Hashtag] #FireAlert: found 3 articles
+2025-07-23 06:48:51,585 [INFO] [Hashtag] #FireAlert: appended 0 posts
+2025-07-23 06:48:51,585 [INFO]  - Searching hashtag: #EarthquakeAlert
+2025-07-23 06:49:01,834 [INFO] [Hashtag] #EarthquakeAlert: found 3 articles
+2025-07-23 06:49:01,997 [INFO] [Hashtag] #EarthquakeAlert: appended 0 posts
+2025-07-23 06:49:01,997 [INFO]  - Searching hashtag: #EarthquakePH
+2025-07-23 06:49:12,942 [INFO] [Hashtag] #EarthquakePH: found 3 articles
+2025-07-23 06:49:14,625 [INFO] [Hashtag] #EarthquakePH: appended 0 posts
+2025-07-23 06:49:14,936 [INFO] ✅ Done! rows saved: 87
+2025-07-23 07:00:03,203 [INFO] *** Scraping PAGE feed: https://www.facebook.com/abscbnNEWS/posts
+2025-07-23 07:00:13,065 [INFO] [Page] abscbnNEWS: found 4 articles
+2025-07-23 07:00:13,202 [INFO] [Page] abscbnNEWS: appended 0 posts
+2025-07-23 07:00:13,203 [INFO] *** Scraping PAGE feed: https://www.facebook.com/rapplerdotcom/posts
+2025-07-23 07:00:23,001 [INFO] [Page] rapplerdotcom: found 4 articles
+2025-07-23 07:00:23,165 [INFO] [Page] rapplerdotcom: appended 0 posts
+2025-07-23 07:00:23,166 [INFO] *** Scraping PAGE feed: https://www.facebook.com/gmanews/posts
+2025-07-23 07:00:32,624 [INFO] [Page] gmanews: found 4 articles
+2025-07-23 07:00:32,773 [INFO] [Page] gmanews: appended 1 posts
+2025-07-23 07:00:32,773 [INFO] *** Scraping PAGE feed: https://www.facebook.com/manilabulletin/posts
+2025-07-23 07:00:43,788 [INFO] [Page] manilabulletin: found 4 articles
+2025-07-23 07:00:43,930 [INFO] [Page] manilabulletin: appended 0 posts
+2025-07-23 07:00:43,931 [INFO] *** Scraping PAGE feed: https://www.facebook.com/sunstarphilippines/posts
+2025-07-23 07:00:54,161 [INFO] [Page] sunstarphilippines: found 4 articles
+2025-07-23 07:00:54,261 [INFO] [Page] sunstarphilippines: appended 0 posts
+2025-07-23 07:00:54,261 [INFO] *** Scraping PAGE feed: https://www.facebook.com/PhilstarNews/posts
+2025-07-23 07:01:03,647 [INFO] [Page] PhilstarNews: found 3 articles
+2025-07-23 07:01:03,714 [INFO] [Page] PhilstarNews: appended 0 posts
+2025-07-23 07:01:03,714 [INFO] *** Scraping PAGE feed: https://www.facebook.com/inquirerdotnet/posts
+2025-07-23 07:01:13,495 [INFO] [Page] inquirerdotnet: found 3 articles
+2025-07-23 07:01:13,581 [INFO] [Page] inquirerdotnet: appended 0 posts
+2025-07-23 07:01:13,582 [INFO] *** Scraping PAGE feed: https://www.facebook.com/pagasa.dost.gov.ph/posts
+2025-07-23 07:01:23,242 [INFO] [Page] pagasa.dost.gov.ph: found 3 articles
+2025-07-23 07:01:23,339 [INFO] [Page] pagasa.dost.gov.ph: appended 1 posts
+2025-07-23 07:01:23,340 [INFO] *** Scraping PAGE feed: https://www.facebook.com/davaocitydrmmc/posts
+2025-07-23 07:01:32,123 [INFO] [Page] davaocitydrmmc: found 0 articles
+2025-07-23 07:01:32,123 [INFO] [Page] davaocitydrmmc: appended 0 posts
+2025-07-23 07:01:32,123 [INFO] *** Scraping PAGE feed: https://www.facebook.com/NDRRMC/posts
+2025-07-23 07:01:41,775 [INFO] [Page] NDRRMC: found 4 articles
+2025-07-23 07:01:41,948 [INFO] [Page] NDRRMC: appended 1 posts
+2025-07-23 07:01:41,948 [INFO] *** Scraping PAGE feed: https://www.facebook.com/UNTVNewsRescue/posts
+2025-07-23 07:01:51,482 [INFO] [Page] UNTVNewsRescue: found 4 articles
+2025-07-23 07:01:51,601 [INFO] [Page] UNTVNewsRescue: appended 1 posts
+2025-07-23 07:01:51,602 [INFO] *** Scraping PAGE feed: https://www.facebook.com/PIAgovernment/posts
+2025-07-23 07:02:00,374 [INFO] [Page] PIAgovernment: found 0 articles
+2025-07-23 07:02:00,375 [INFO] [Page] PIAgovernment: appended 0 posts
+2025-07-23 07:02:00,375 [INFO] *** Scraping PAGE feed: https://www.facebook.com/DavaoDRRMO/posts
+2025-07-23 07:02:09,595 [INFO] [Page] DavaoDRRMO: found 3 articles
+2025-07-23 07:02:11,071 [INFO] [Page] DavaoDRRMO: appended 0 posts
+2025-07-23 07:02:11,071 [INFO] *** Scraping PAGE feed: https://www.facebook.com/sunstardavaonews/posts
+2025-07-23 07:02:20,293 [INFO] [Page] sunstardavaonews: found 3 articles
+2025-07-23 07:02:20,377 [INFO] [Page] sunstardavaonews: appended 0 posts
+2025-07-23 07:02:20,378 [INFO] *** Scraping PAGE feed: https://www.facebook.com/profile.php?id=61568208630146/posts
+2025-07-23 07:02:29,623 [INFO] [Page] profile.php?id=61568208630146: found 0 articles
+2025-07-23 07:02:29,623 [INFO] [Page] profile.php?id=61568208630146: appended 0 posts
+2025-07-23 07:02:29,623 [INFO] *** Scraping PAGE feed: https://www.facebook.com/PHIVOLCS/posts
+2025-07-23 07:02:38,871 [INFO] [Page] PHIVOLCS: found 3 articles
+2025-07-23 07:02:40,145 [INFO] [Page] PHIVOLCS: appended 1 posts
+2025-07-23 07:02:40,145 [INFO]  - Searching hashtag: #FloodAlert
+2025-07-23 07:02:50,868 [INFO] [Hashtag] #FloodAlert: found 3 articles
+2025-07-23 07:02:52,205 [INFO] [Hashtag] #FloodAlert: appended 0 posts
+2025-07-23 07:02:52,205 [INFO]  - Searching hashtag: #BahaPH
+2025-07-23 07:03:06,337 [INFO] [Hashtag] #BahaPH: found 3 articles
+2025-07-23 07:03:07,822 [INFO] [Hashtag] #BahaPH: appended 0 posts
+2025-07-23 07:03:07,823 [INFO]  - Searching hashtag: #StreetFloodAlert
+2025-07-23 07:03:18,439 [INFO] [Hashtag] #StreetFloodAlert: found 3 articles
+2025-07-23 07:03:20,215 [INFO] [Hashtag] #StreetFloodAlert: appended 0 posts
+2025-07-23 07:03:20,215 [INFO]  - Searching hashtag: #LandslideAlert
+2025-07-23 07:03:30,809 [INFO] [Hashtag] #LandslideAlert: found 3 articles
+2025-07-23 07:03:31,132 [INFO] [Hashtag] #LandslideAlert: appended 0 posts
+2025-07-23 07:03:31,133 [INFO]  - Searching hashtag: #LandslidePH
+2025-07-23 07:03:41,694 [INFO] [Hashtag] #LandslidePH: found 3 articles
+2025-07-23 07:03:43,245 [INFO] [Hashtag] #LandslidePH: appended 0 posts
+2025-07-23 07:03:43,245 [INFO]  - Searching hashtag: #FireAlert
+2025-07-23 07:03:53,462 [INFO] [Hashtag] #FireAlert: found 3 articles
+2025-07-23 07:03:55,080 [INFO] [Hashtag] #FireAlert: appended 0 posts
+2025-07-23 07:03:55,080 [INFO]  - Searching hashtag: #EarthquakeAlert
+2025-07-23 07:04:06,256 [INFO] [Hashtag] #EarthquakeAlert: found 3 articles
+2025-07-23 07:04:07,657 [INFO] [Hashtag] #EarthquakeAlert: appended 1 posts
+2025-07-23 07:04:07,657 [INFO]  - Searching hashtag: #EarthquakePH
+2025-07-23 07:04:17,913 [INFO] [Hashtag] #EarthquakePH: found 3 articles
+2025-07-23 07:04:19,634 [INFO] [Hashtag] #EarthquakePH: appended 0 posts
+2025-07-23 07:04:20,001 [INFO] ✅ Done! rows saved: 92
+2025-07-23 09:30:02,518 [WARNING] There was an error managing chromedriver (error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)); using driver found in the cache
+2025-07-23 09:30:02,519 [WARNING] Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)
+2025-07-23 09:30:04,422 [INFO] *** Scraping PAGE feed: https://www.facebook.com/abscbnNEWS/posts
+Traceback (most recent call last):
+  File "/Users/prettyfaith/Documents/Github/thesis-disaster-chatbot/socmed_disaster_scraper.py", line 192, in <module>
+    driver.get(feed_url)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 454, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=138.0.7204.168)
+Stacktrace:
+0   chromedriver                        0x0000000104ac7570 cxxbridge1$str$ptr + 2731064
+1   chromedriver                        0x0000000104abf468 cxxbridge1$str$ptr + 2698032
+2   chromedriver                        0x000000010460e3f8 cxxbridge1$string$len + 90664
+3   chromedriver                        0x0000000104606828 cxxbridge1$string$len + 58968
+4   chromedriver                        0x00000001045f9480 cxxbridge1$string$len + 4784
+5   chromedriver                        0x00000001045fae84 cxxbridge1$string$len + 11444
+6   chromedriver                        0x00000001045f98d4 cxxbridge1$string$len + 5892
+7   chromedriver                        0x00000001045f9228 cxxbridge1$string$len + 4184
+8   chromedriver                        0x00000001045f8f74 cxxbridge1$string$len + 3492
+9   chromedriver                        0x00000001045f6d2c chromedriver + 191788
+10  chromedriver                        0x00000001045f7788 chromedriver + 194440
+11  chromedriver                        0x000000010461145c cxxbridge1$string$len + 103052
+12  chromedriver                        0x0000000104697590 cxxbridge1$string$len + 652224
+13  chromedriver                        0x0000000104696b1c cxxbridge1$string$len + 649548
+14  chromedriver                        0x0000000104649a0c cxxbridge1$string$len + 333884
+15  chromedriver                        0x0000000104a8a5f4 cxxbridge1$str$ptr + 2481340
+16  chromedriver                        0x0000000104a8d85c cxxbridge1$str$ptr + 2494244
+17  chromedriver                        0x0000000104a6b248 cxxbridge1$str$ptr + 2353424
+18  chromedriver                        0x0000000104a8e118 cxxbridge1$str$ptr + 2496480
+19  chromedriver                        0x0000000104a5c2f8 cxxbridge1$str$ptr + 2292160
+20  chromedriver                        0x0000000104aae00c cxxbridge1$str$ptr + 2627284
+21  chromedriver                        0x0000000104aae198 cxxbridge1$str$ptr + 2627680
+22  chromedriver                        0x0000000104abf0a4 cxxbridge1$str$ptr + 2697068
+23  libsystem_pthread.dylib             0x000000018706ec0c _pthread_start + 136
+24  libsystem_pthread.dylib             0x0000000187069b80 thread_start + 8
+
+2025-07-23 09:45:04,661 [INFO] *** Scraping PAGE feed: https://www.facebook.com/abscbnNEWS/posts
+2025-07-23 09:45:23,101 [INFO] [Page] abscbnNEWS: found 4 articles
+2025-07-23 09:45:23,251 [INFO] [Page] abscbnNEWS: appended 0 posts
+2025-07-23 09:45:23,251 [INFO] *** Scraping PAGE feed: https://www.facebook.com/rapplerdotcom/posts
+Traceback (most recent call last):
+  File "/Users/prettyfaith/Documents/Github/thesis-disaster-chatbot/socmed_disaster_scraper.py", line 192, in <module>
+    driver.get(feed_url)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 454, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=138.0.7204.168)
+Stacktrace:
+0   chromedriver                        0x0000000102d3b570 cxxbridge1$str$ptr + 2731064
+1   chromedriver                        0x0000000102d33468 cxxbridge1$str$ptr + 2698032
+2   chromedriver                        0x00000001028823f8 cxxbridge1$string$len + 90664
+3   chromedriver                        0x000000010286d1fc cxxbridge1$string$len + 4140
+4   chromedriver                        0x000000010286cf74 cxxbridge1$string$len + 3492
+5   chromedriver                        0x000000010286bf90 chromedriver + 196496
+6   chromedriver                        0x000000010288e3b8 cxxbridge1$string$len + 139752
+7   chromedriver                        0x000000010290adbc cxxbridge1$string$len + 650220
+8   chromedriver                        0x00000001028bda0c cxxbridge1$string$len + 333884
+9   chromedriver                        0x0000000102cfe5f4 cxxbridge1$str$ptr + 2481340
+10  chromedriver                        0x0000000102d0185c cxxbridge1$str$ptr + 2494244
+11  chromedriver                        0x0000000102cdf248 cxxbridge1$str$ptr + 2353424
+12  chromedriver                        0x0000000102d02118 cxxbridge1$str$ptr + 2496480
+13  chromedriver                        0x0000000102cd02f8 cxxbridge1$str$ptr + 2292160
+14  chromedriver                        0x0000000102d2200c cxxbridge1$str$ptr + 2627284
+15  chromedriver                        0x0000000102d22198 cxxbridge1$str$ptr + 2627680
+16  chromedriver                        0x0000000102d330a4 cxxbridge1$str$ptr + 2697068
+17  libsystem_pthread.dylib             0x000000018706ec0c _pthread_start + 136
+18  libsystem_pthread.dylib             0x0000000187069b80 thread_start + 8
+
+2025-07-23 10:00:04,166 [INFO] *** Scraping PAGE feed: https://www.facebook.com/abscbnNEWS/posts
+2025-07-23 10:00:24,925 [INFO] [Page] abscbnNEWS: found 5 articles
+2025-07-23 10:00:25,289 [INFO] [Page] abscbnNEWS: appended 0 posts
+2025-07-23 10:00:25,290 [INFO] *** Scraping PAGE feed: https://www.facebook.com/rapplerdotcom/posts
+2025-07-23 10:00:54,975 [INFO] [Page] rapplerdotcom: found 3 articles
+2025-07-23 10:00:55,144 [INFO] [Page] rapplerdotcom: appended 0 posts
+2025-07-23 10:00:55,144 [INFO] *** Scraping PAGE feed: https://www.facebook.com/gmanews/posts
+2025-07-23 10:01:10,048 [INFO] [Page] gmanews: found 3 articles
+2025-07-23 10:01:10,268 [INFO] [Page] gmanews: appended 0 posts
+2025-07-23 10:01:10,269 [INFO] *** Scraping PAGE feed: https://www.facebook.com/manilabulletin/posts
+2025-07-23 10:01:25,199 [INFO] [Page] manilabulletin: found 4 articles
+2025-07-23 10:01:26,923 [INFO] [Page] manilabulletin: appended 0 posts
+2025-07-23 10:01:26,924 [INFO] *** Scraping PAGE feed: https://www.facebook.com/sunstarphilippines/posts
+Traceback (most recent call last):
+  File "/Users/prettyfaith/Documents/Github/thesis-disaster-chatbot/socmed_disaster_scraper.py", line 192, in <module>
+    driver.get(feed_url)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 454, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=138.0.7204.168)
+Stacktrace:
+0   chromedriver                        0x00000001047af570 cxxbridge1$str$ptr + 2731064
+1   chromedriver                        0x00000001047a7468 cxxbridge1$str$ptr + 2698032
+2   chromedriver                        0x00000001042f63f8 cxxbridge1$string$len + 90664
+3   chromedriver                        0x00000001042e11fc cxxbridge1$string$len + 4140
+4   chromedriver                        0x00000001042e0f74 cxxbridge1$string$len + 3492
+5   chromedriver                        0x00000001042ded2c chromedriver + 191788
+6   chromedriver                        0x00000001042df788 chromedriver + 194440
+7   chromedriver                        0x00000001042f945c cxxbridge1$string$len + 103052
+8   chromedriver                        0x000000010437f590 cxxbridge1$string$len + 652224
+9   chromedriver                        0x000000010437eb1c cxxbridge1$string$len + 649548
+10  chromedriver                        0x0000000104331a0c cxxbridge1$string$len + 333884
+11  chromedriver                        0x00000001047725f4 cxxbridge1$str$ptr + 2481340
+12  chromedriver                        0x000000010477585c cxxbridge1$str$ptr + 2494244
+13  chromedriver                        0x0000000104753248 cxxbridge1$str$ptr + 2353424
+14  chromedriver                        0x0000000104776118 cxxbridge1$str$ptr + 2496480
+15  chromedriver                        0x00000001047442f8 cxxbridge1$str$ptr + 2292160
+16  chromedriver                        0x000000010479600c cxxbridge1$str$ptr + 2627284
+17  chromedriver                        0x0000000104796198 cxxbridge1$str$ptr + 2627680
+18  chromedriver                        0x00000001047a70a4 cxxbridge1$str$ptr + 2697068
+19  libsystem_pthread.dylib             0x000000018706ec0c _pthread_start + 136
+20  libsystem_pthread.dylib             0x0000000187069b80 thread_start + 8
+
+2025-07-23 12:45:04,534 [INFO] *** Scraping PAGE feed: https://www.facebook.com/abscbnNEWS/posts
+2025-07-23 12:45:16,162 [INFO] [Page] abscbnNEWS: found 4 articles
+2025-07-23 12:45:16,487 [INFO] [Page] abscbnNEWS: appended 2 posts
+2025-07-23 12:45:16,488 [INFO] *** Scraping PAGE feed: https://www.facebook.com/rapplerdotcom/posts
+2025-07-23 12:45:26,844 [INFO] [Page] rapplerdotcom: found 3 articles
+2025-07-23 12:45:26,936 [INFO] [Page] rapplerdotcom: appended 0 posts
+2025-07-23 12:45:26,936 [INFO] *** Scraping PAGE feed: https://www.facebook.com/gmanews/posts
+2025-07-23 12:45:36,559 [INFO] [Page] gmanews: found 4 articles
+2025-07-23 12:45:36,685 [INFO] [Page] gmanews: appended 0 posts
+2025-07-23 12:45:36,685 [INFO] *** Scraping PAGE feed: https://www.facebook.com/manilabulletin/posts
+Traceback (most recent call last):
+  File "/Users/prettyfaith/Documents/Github/thesis-disaster-chatbot/socmed_disaster_scraper.py", line 194, in <module>
+    scroll_page()
+    ~~~~~~~~~~~^^
+  File "/Users/prettyfaith/Documents/Github/thesis-disaster-chatbot/socmed_disaster_scraper.py", line 85, in scroll_page
+    last = driver.execute_script("return document.body.scrollHeight")
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 528, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=138.0.7204.168)
+Stacktrace:
+0   chromedriver                        0x0000000100eab570 cxxbridge1$str$ptr + 2731064
+1   chromedriver                        0x0000000100ea3468 cxxbridge1$str$ptr + 2698032
+2   chromedriver                        0x00000001009f23f8 cxxbridge1$string$len + 90664
+3   chromedriver                        0x00000001009dbdc8 chromedriver + 196040
+4   chromedriver                        0x00000001009fef14 cxxbridge1$string$len + 142660
+5   chromedriver                        0x0000000100a619bc cxxbridge1$string$len + 546796
+6   chromedriver                        0x0000000100a7a638 cxxbridge1$string$len + 648296
+7   chromedriver                        0x0000000100a2da0c cxxbridge1$string$len + 333884
+8   chromedriver                        0x0000000100e6e5f4 cxxbridge1$str$ptr + 2481340
+9   chromedriver                        0x0000000100e7185c cxxbridge1$str$ptr + 2494244
+10  chromedriver                        0x0000000100e4f248 cxxbridge1$str$ptr + 2353424
+11  chromedriver                        0x0000000100e72118 cxxbridge1$str$ptr + 2496480
+12  chromedriver                        0x0000000100e402f8 cxxbridge1$str$ptr + 2292160
+13  chromedriver                        0x0000000100e9200c cxxbridge1$str$ptr + 2627284
+14  chromedriver                        0x0000000100e92198 cxxbridge1$str$ptr + 2627680
+15  chromedriver                        0x0000000100ea30a4 cxxbridge1$str$ptr + 2697068
+16  libsystem_pthread.dylib             0x000000018706ec0c _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000187069b80 thread_start + 8
+
+2025-07-23 13:46:24,177 [INFO] *** Scraping PAGE feed: https://www.facebook.com/abscbnNEWS/posts
+2025-07-23 13:46:38,101 [INFO] [Page] abscbnNEWS: found 3 articles
+2025-07-23 13:46:38,179 [INFO] [Page] abscbnNEWS: appended 0 posts
+2025-07-23 13:46:38,179 [INFO] *** Scraping PAGE feed: https://www.facebook.com/rapplerdotcom/posts
+2025-07-23 13:46:48,789 [INFO] [Page] rapplerdotcom: found 3 articles
+2025-07-23 13:46:48,886 [INFO] [Page] rapplerdotcom: appended 0 posts
+2025-07-23 13:46:48,886 [INFO] *** Scraping PAGE feed: https://www.facebook.com/gmanews/posts
+2025-07-23 13:46:58,741 [INFO] [Page] gmanews: found 4 articles
+2025-07-23 13:46:58,856 [INFO] [Page] gmanews: appended 0 posts
+2025-07-23 13:46:58,857 [INFO] *** Scraping PAGE feed: https://www.facebook.com/manilabulletin/posts
+2025-07-23 13:47:09,262 [INFO] [Page] manilabulletin: found 3 articles
+2025-07-23 13:47:09,397 [INFO] [Page] manilabulletin: appended 1 posts
+2025-07-23 13:47:09,397 [INFO] *** Scraping PAGE feed: https://www.facebook.com/sunstarphilippines/posts
+2025-07-23 13:47:19,942 [INFO] [Page] sunstarphilippines: found 3 articles
+2025-07-23 13:47:20,043 [INFO] [Page] sunstarphilippines: appended 0 posts
+2025-07-23 13:47:20,047 [INFO] *** Scraping PAGE feed: https://www.facebook.com/PhilstarNews/posts
+2025-07-23 13:47:30,478 [INFO] [Page] PhilstarNews: found 3 articles
+2025-07-23 13:47:31,651 [INFO] [Page] PhilstarNews: appended 0 posts
+2025-07-23 13:47:31,651 [INFO] *** Scraping PAGE feed: https://www.facebook.com/inquirerdotnet/posts
+2025-07-23 13:47:42,295 [INFO] [Page] inquirerdotnet: found 4 articles
+2025-07-23 13:47:42,428 [INFO] [Page] inquirerdotnet: appended 0 posts
+2025-07-23 13:47:42,429 [INFO] *** Scraping PAGE feed: https://www.facebook.com/pagasa.dost.gov.ph/posts
+2025-07-23 13:47:55,059 [INFO] [Page] pagasa.dost.gov.ph: found 5 articles
+2025-07-23 13:47:56,744 [INFO] [Page] pagasa.dost.gov.ph: appended 1 posts
+2025-07-23 13:47:56,744 [INFO] *** Scraping PAGE feed: https://www.facebook.com/davaocitydrmmc/posts
+2025-07-23 13:48:06,307 [INFO] [Page] davaocitydrmmc: found 0 articles
+2025-07-23 13:48:06,308 [INFO] [Page] davaocitydrmmc: appended 0 posts
+2025-07-23 13:48:06,308 [INFO] *** Scraping PAGE feed: https://www.facebook.com/NDRRMC/posts
+2025-07-23 13:48:17,244 [INFO] [Page] NDRRMC: found 4 articles
+2025-07-23 13:48:19,939 [INFO] [Page] NDRRMC: appended 2 posts
+2025-07-23 13:48:19,939 [INFO] *** Scraping PAGE feed: https://www.facebook.com/UNTVNewsRescue/posts
+2025-07-23 13:48:30,995 [INFO] [Page] UNTVNewsRescue: found 3 articles
+2025-07-23 13:48:32,217 [INFO] [Page] UNTVNewsRescue: appended 1 posts
+2025-07-23 13:48:32,217 [INFO] *** Scraping PAGE feed: https://www.facebook.com/PIAgovernment/posts
+2025-07-23 13:48:41,170 [INFO] [Page] PIAgovernment: found 0 articles
+2025-07-23 13:48:41,170 [INFO] [Page] PIAgovernment: appended 0 posts
+2025-07-23 13:48:41,170 [INFO] *** Scraping PAGE feed: https://www.facebook.com/DavaoDRRMO/posts
+2025-07-23 13:48:51,238 [INFO] [Page] DavaoDRRMO: found 3 articles
+2025-07-23 13:48:52,600 [INFO] [Page] DavaoDRRMO: appended 1 posts
+2025-07-23 13:48:52,600 [INFO] *** Scraping PAGE feed: https://www.facebook.com/sunstardavaonews/posts
+2025-07-23 13:49:02,867 [INFO] [Page] sunstardavaonews: found 3 articles
+2025-07-23 13:49:03,004 [INFO] [Page] sunstardavaonews: appended 0 posts
+2025-07-23 13:49:03,004 [INFO] *** Scraping PAGE feed: https://www.facebook.com/profile.php?id=61568208630146/posts
+Traceback (most recent call last):
+  File "/Users/prettyfaith/Documents/Github/thesis-disaster-chatbot/socmed_disaster_scraper.py", line 192, in <module>
+    driver.get(feed_url)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 454, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=138.0.7204.168)
+Stacktrace:
+0   chromedriver                        0x0000000102a2f570 cxxbridge1$str$ptr + 2731064
+1   chromedriver                        0x0000000102a27468 cxxbridge1$str$ptr + 2698032
+2   chromedriver                        0x00000001025763f8 cxxbridge1$string$len + 90664
+3   chromedriver                        0x00000001025611fc cxxbridge1$string$len + 4140
+4   chromedriver                        0x0000000102560f74 cxxbridge1$string$len + 3492
+5   chromedriver                        0x000000010255ff90 chromedriver + 196496
+6   chromedriver                        0x00000001025823b8 cxxbridge1$string$len + 139752
+7   chromedriver                        0x00000001025fedbc cxxbridge1$string$len + 650220
+8   chromedriver                        0x00000001025b1a0c cxxbridge1$string$len + 333884
+9   chromedriver                        0x00000001029f25f4 cxxbridge1$str$ptr + 2481340
+10  chromedriver                        0x00000001029f585c cxxbridge1$str$ptr + 2494244
+11  chromedriver                        0x00000001029d3248 cxxbridge1$str$ptr + 2353424
+12  chromedriver                        0x00000001029f6118 cxxbridge1$str$ptr + 2496480
+13  chromedriver                        0x00000001029c42f8 cxxbridge1$str$ptr + 2292160
+14  chromedriver                        0x0000000102a1600c cxxbridge1$str$ptr + 2627284
+15  chromedriver                        0x0000000102a16198 cxxbridge1$str$ptr + 2627680
+16  chromedriver                        0x0000000102a270a4 cxxbridge1$str$ptr + 2697068
+17  libsystem_pthread.dylib             0x000000018706ec0c _pthread_start + 136
+18  libsystem_pthread.dylib             0x0000000187069b80 thread_start + 8
+
