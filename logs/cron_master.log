@@ -4200,3 +4200,76 @@ Stacktrace:
 2025-07-24 19:38:10,860 [INFO] [Hashtag] #EarthquakePH: found 3 articles
 2025-07-24 19:38:12,301 [INFO] [Hashtag] #EarthquakePH: appended 0 posts
 2025-07-24 19:38:12,723 [INFO] ✅ Done! rows saved: 356
+2025-07-24 19:45:03,429 [INFO] *** Scraping PAGE feed: https://www.facebook.com/abscbnNEWS/posts
+2025-07-24 19:45:12,997 [INFO] [Page] abscbnNEWS: found 4 articles
+2025-07-24 19:45:13,142 [INFO] [Page] abscbnNEWS: appended 0 posts
+2025-07-24 19:45:13,142 [INFO] *** Scraping PAGE feed: https://www.facebook.com/rapplerdotcom/posts
+2025-07-24 19:45:22,858 [INFO] [Page] rapplerdotcom: found 3 articles
+2025-07-24 19:45:22,979 [INFO] [Page] rapplerdotcom: appended 1 posts
+2025-07-24 19:45:22,979 [INFO] *** Scraping PAGE feed: https://www.facebook.com/gmanews/posts
+2025-07-24 19:45:32,518 [INFO] [Page] gmanews: found 4 articles
+2025-07-24 19:45:32,689 [INFO] [Page] gmanews: appended 1 posts
+2025-07-24 19:45:32,690 [INFO] *** Scraping PAGE feed: https://www.facebook.com/manilabulletin/posts
+2025-07-24 19:45:42,786 [INFO] [Page] manilabulletin: found 4 articles
+2025-07-24 19:45:42,917 [INFO] [Page] manilabulletin: appended 1 posts
+2025-07-24 19:45:42,917 [INFO] *** Scraping PAGE feed: https://www.facebook.com/sunstarphilippines/posts
+2025-07-24 19:45:52,409 [INFO] [Page] sunstarphilippines: found 3 articles
+2025-07-24 19:45:52,562 [INFO] [Page] sunstarphilippines: appended 0 posts
+2025-07-24 19:45:52,562 [INFO] *** Scraping PAGE feed: https://www.facebook.com/PhilstarNews/posts
+2025-07-24 19:46:02,168 [INFO] [Page] PhilstarNews: found 4 articles
+2025-07-24 19:46:03,564 [INFO] [Page] PhilstarNews: appended 0 posts
+2025-07-24 19:46:03,564 [INFO] *** Scraping PAGE feed: https://www.facebook.com/inquirerdotnet/posts
+2025-07-24 19:46:12,724 [INFO] [Page] inquirerdotnet: found 3 articles
+2025-07-24 19:46:12,790 [INFO] [Page] inquirerdotnet: appended 0 posts
+2025-07-24 19:46:12,790 [INFO] *** Scraping PAGE feed: https://www.facebook.com/pagasa.dost.gov.ph/posts
+2025-07-24 19:46:22,175 [INFO] [Page] pagasa.dost.gov.ph: found 3 articles
+2025-07-24 19:46:22,333 [INFO] [Page] pagasa.dost.gov.ph: appended 0 posts
+2025-07-24 19:46:22,334 [INFO] *** Scraping PAGE feed: https://www.facebook.com/davaocitydrmmc/posts
+2025-07-24 19:46:31,206 [INFO] [Page] davaocitydrmmc: found 0 articles
+2025-07-24 19:46:31,207 [INFO] [Page] davaocitydrmmc: appended 0 posts
+2025-07-24 19:46:31,207 [INFO] *** Scraping PAGE feed: https://www.facebook.com/NDRRMC/posts
+2025-07-24 19:46:40,824 [INFO] [Page] NDRRMC: found 3 articles
+2025-07-24 19:46:42,339 [INFO] [Page] NDRRMC: appended 1 posts
+2025-07-24 19:46:42,339 [INFO] *** Scraping PAGE feed: https://www.facebook.com/UNTVNewsRescue/posts
+2025-07-24 19:46:52,077 [INFO] [Page] UNTVNewsRescue: found 5 articles
+2025-07-24 19:46:53,483 [INFO] [Page] UNTVNewsRescue: appended 1 posts
+2025-07-24 19:46:53,484 [INFO] *** Scraping PAGE feed: https://www.facebook.com/PIAgovernment/posts
+2025-07-24 19:47:02,293 [INFO] [Page] PIAgovernment: found 0 articles
+2025-07-24 19:47:02,295 [INFO] [Page] PIAgovernment: appended 0 posts
+2025-07-24 19:47:02,295 [INFO] *** Scraping PAGE feed: https://www.facebook.com/DavaoDRRMO/posts
+2025-07-24 19:47:11,808 [INFO] [Page] DavaoDRRMO: found 4 articles
+2025-07-24 19:47:13,795 [INFO] [Page] DavaoDRRMO: appended 1 posts
+2025-07-24 19:47:13,796 [INFO] *** Scraping PAGE feed: https://www.facebook.com/sunstardavaonews/posts
+2025-07-24 19:47:23,596 [INFO] [Page] sunstardavaonews: found 3 articles
+2025-07-24 19:47:23,760 [INFO] [Page] sunstardavaonews: appended 0 posts
+2025-07-24 19:47:23,761 [INFO] *** Scraping PAGE feed: https://www.facebook.com/profile.php?id=61568208630146/posts
+2025-07-24 19:47:33,003 [INFO] [Page] profile.php?id=61568208630146: found 0 articles
+2025-07-24 19:47:33,004 [INFO] [Page] profile.php?id=61568208630146: appended 0 posts
+2025-07-24 19:47:33,004 [INFO] *** Scraping PAGE feed: https://www.facebook.com/PHIVOLCS/posts
+2025-07-24 19:47:42,719 [INFO] [Page] PHIVOLCS: found 4 articles
+2025-07-24 19:47:44,442 [INFO] [Page] PHIVOLCS: appended 1 posts
+2025-07-24 19:47:44,442 [INFO]  - Searching hashtag: #FloodAlert
+2025-07-24 19:47:54,987 [INFO] [Hashtag] #FloodAlert: found 3 articles
+2025-07-24 19:47:55,214 [INFO] [Hashtag] #FloodAlert: appended 0 posts
+2025-07-24 19:47:55,214 [INFO]  - Searching hashtag: #BahaPH
+2025-07-24 19:48:07,358 [INFO] [Hashtag] #BahaPH: found 3 articles
+2025-07-24 19:48:07,555 [INFO] [Hashtag] #BahaPH: appended 0 posts
+2025-07-24 19:48:07,556 [INFO]  - Searching hashtag: #StreetFloodAlert
+2025-07-24 19:48:18,348 [INFO] [Hashtag] #StreetFloodAlert: found 3 articles
+2025-07-24 19:48:20,027 [INFO] [Hashtag] #StreetFloodAlert: appended 0 posts
+2025-07-24 19:48:20,027 [INFO]  - Searching hashtag: #LandslideAlert
+2025-07-24 19:48:30,501 [INFO] [Hashtag] #LandslideAlert: found 3 articles
+2025-07-24 19:48:30,700 [INFO] [Hashtag] #LandslideAlert: appended 0 posts
+2025-07-24 19:48:30,700 [INFO]  - Searching hashtag: #LandslidePH
+2025-07-24 19:48:41,018 [INFO] [Hashtag] #LandslidePH: found 3 articles
+2025-07-24 19:48:42,670 [INFO] [Hashtag] #LandslidePH: appended 0 posts
+2025-07-24 19:48:42,670 [INFO]  - Searching hashtag: #FireAlert
+2025-07-24 19:48:53,032 [INFO] [Hashtag] #FireAlert: found 3 articles
+2025-07-24 19:48:54,461 [INFO] [Hashtag] #FireAlert: appended 1 posts
+2025-07-24 19:48:54,461 [INFO]  - Searching hashtag: #EarthquakeAlert
+2025-07-24 19:49:05,045 [INFO] [Hashtag] #EarthquakeAlert: found 3 articles
+2025-07-24 19:49:05,424 [INFO] [Hashtag] #EarthquakeAlert: appended 0 posts
+2025-07-24 19:49:05,424 [INFO]  - Searching hashtag: #EarthquakePH
+2025-07-24 19:49:15,997 [INFO] [Hashtag] #EarthquakePH: found 3 articles
+2025-07-24 19:49:17,507 [INFO] [Hashtag] #EarthquakePH: appended 0 posts
+2025-07-24 19:49:17,948 [INFO] ✅ Done! rows saved: 361
