@@ -19,7 +19,8 @@ since_user   = now_ph - timedelta(hours=since_user_hours)
 since_search = now_ph - timedelta(hours=since_search_hours)
 scraped_at   = now_ph.strftime('%Y-%m-%d %H:%M')
 
-X_USERS        = ['abscbnNEWS','rapplerdotcom','gmanews','dost_pagasa']
+X_USERS        = ['ABSCBNNews','rapplerdotcom','gmanews','dost_pagasa', 'inquirerdotnet' , 
+                  'phivolcs_dost', 'NDRRMC_OpCen']
 X_SEARCH_QUERIES = [
     "flood philippines", "Flood in Davao",
     "landslide philippines", "Landslide in Davao",
@@ -33,38 +34,66 @@ X_SEARCH_QUERIES = [
 
 # Keywords for Filtering 
 KEYWORDS = [
-    '#FloodAlert', '#BahaPH', '#StreetFloodAlert',
-    '#LandslideAlert', '#LandslidePH' '#FireAlert', '#EarthquakeAlert', '#EarthquakePH',
-    # Place
-    'Davao', 'Davao Region', 'Philippines', 
-    # English
-    'earthquake', 'aftershock', 'ground shaking', 'seismic',
-    'flood', 'flooding', 'evacuation',
-    'typhoon', 'storm', 'storm surge', 'tropical storm', 'tropical depression',
-    'landslide', 'soil erosion',
-    'fire', 'blaze', 'burning', 'wildfire',
-    'volcano', 'volcanic', 'eruption', 'ashfall', 'lava',
-    'disaster', 'emergency', 'rescue', 'relief',
-    'weather', 'rain', 'heavy rain', 'LPA', 'low pressure area',
-    'warning', 'alert', 'advisory', 'monsoon',
+    # Typhoon / Storm
+    "typhoon", "storm", "storm surge",
+    "tropical storm", "tropical depression",
+    "bagyo", "unos",           
+    "#typhoon", "#storm",
 
-    # Tagalog
-    'lindol', 'pagyanig', 'pag-uga', 'pagguho ng lupa',
-    'baha', 'bahain', 'pagbaha', 'paglikas',
-    'bagyo', 'unos', 'malakas na ulan', 'tropical depression',
-    'sunog', 'nasunog', 'apoy',
-    'bulkan', 'pagputok ng bulkan', 'abo', 'lava', 'mainit na bato',
-    'kalamidad', 'sakuna', 'rescue', 'relief operation',
-    'babala', 'abiso', 'delubyo', 'emergency response',
+    # Rain / Weather
+    "weather", "rain", "raining", "rainfall", "downpour", "showers",
+    "drizzle", "heavy rain", "monsoon",
+    "LPA", "low pressure area",
+    "malakas na ulan",
+    
+    # Flood (and related)
+    "flood", "flooding", "flash flood", "river overflow",
+    "baha", "lunop", "Street Flood",      
+    "#flood", "#FloodAlert", "#BahaPH", "#StreetFloodAlert",
 
-    # Bisaya / Cebuano
-    'linog', 'nangurog', 'nahulog ang yuta',
-    'baha', 'lunop', 'nabahaan',
-    'bagyo', 'kusog nga ulan', 'ting-ulan',
-    'sunog', 'kalayo', 'nasunog',
-    'bulkan', 'bukid nga nagbuto', 'abo', 'lava',
-    'kalamidad', 'kasamok', 'tabang', 'rescue', 'relief',
-    'pahimangno', 'pasidaan', 'emergency'
+    # Landslide / Mudslide
+    "landslide", "mudslide", "soil erosion", "slope failure",
+    "pagguho ng lupa", "nangurog",  
+    "#landslide", "#LandslideAlert", "#LandslidePH",
+
+    # Earthquake
+    "earthquake", "aftershock", "ground shaking", "seismic",
+    "linog", "pagyanig",       
+    "#EarthquakeAlert", "#EarthquakePH",
+
+    # Tsunami
+    "tsunami", "tidal wave", "sea surge", "coastal surge",
+    "daluyong",                     
+    "#tsunami",
+
+    # Fire / Wildfire
+    "fire", "blaze", "burning", "wildfire",
+    "sunog", "nasunog","apoy",            
+    "#FireAlert",
+
+    # Volcano
+    "volcano", "volcanic", "eruption", "ashfall", "lava",
+    "bulkan", "pagputok ng bulkan",  
+    "#volcano",
+
+    # General disaster / emergency
+    "disaster", "emergency", "rescue", "relief",
+    "evacuation", "#evacuation",
+
+    # Warnings & Alerts
+    "warning", "alert", "advisory", "bulletin",
+    "babala", "abiso",              
+    "#warning", "#alert",
+
+    # Tagalog / Cebuano extras
+    "pag-uga", "pagbaha", "paglikas", "malakas na ulan",
+    "mainit na bato", "kalamidad", "sakuna",
+    "pahimangno", "pasidaan",
+
+    # Bisaya / Cebuano extras
+    "nahulog ang yuta", "nabahaan",
+    "kusog nga ulan", "ting-ulan",
+    "kasamok", "tabang"
 ]
 
 # SELENIUM SETUP
