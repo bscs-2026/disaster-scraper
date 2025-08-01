@@ -7,6 +7,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 import pandas as pd
+from social_media_config import KEYWORDS, FACEBOOK
 
 # Logging 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
@@ -14,90 +15,15 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(me
 # Timezone & Thresholds 
 PH_TIME            = timezone(timedelta(hours=8))
 now_ph             = datetime.now(PH_TIME)
-since_time_page    = now_ph - timedelta(hours=24)  # last 24h for pages
-since_time_hashtag = now_ph - timedelta(hours=48)  # last 48h for hashtags
+since_time_page    = now_ph - timedelta(hours=24)  # last 24h for FB_PAGES
+since_time_hashtag = now_ph - timedelta(hours=48)  # last 48h for FB_HASHTAGS
 scraped_at         = now_ph.strftime('%Y-%m-%d %H:%M')
 
-# Facebook Pages & Hashtags 
-PAGES = [
-    'abscbnNEWS', 'rapplerdotcom', 'gmanews',
-    'manilabulletin', 'sunstarphilippines', 'PhilstarNews',
-    'inquirerdotnet', 'pagasa.dost.gov.ph', 'davaocitydrmmc',
-    'NDRRMC', 'UNTVNewsRescue', 'PIAgovernment', 'DavaoDRRMO',
-    'sunstardavaonews', 'profile.php?id=61568208630146', 'PHIVOLCS', 'mrpsd.com.ph'
-]
+# Facebook FB_PAGES & FB_HASHTAGS 
+FB_PAGES = FACEBOOK["users"]
+FB_HASHTAGS = FACEBOOK["search_queries"]
 
-HASHTAGS = [
-    'FloodAlert', 'BahaPH', 'StreetFloodAlert', 'TsunamiAlert',
-    'LandslideAlert', 'LandslidePH', 'FireAlert', 'EarthquakeAlert', 'EarthquakePH',
-    'RescuePH'
-]
-
-# Keywords for Filtering 
-KEYWORDS = [
-    # Typhoon / Storm
-    "typhoon", "storm", "storm surge",
-    "tropical storm", "tropical depression",
-    "bagyo", "unos",           
-    "#typhoon", "#storm",
-
-    # Rain / Weather
-    "weather", "rain", "raining", "rainfall", "downpour", "showers",
-    "drizzle", "heavy rain", "monsoon",
-    "LPA", "low pressure area",
-    "malakas na ulan",
-    
-    # Flood (and related)
-    "flood", "flooding", "flash flood", "river overflow",
-    "baha", "lunop", "Street Flood",      
-    "#flood", "#FloodAlert", "#BahaPH", "#StreetFloodAlert",
-
-    # Landslide / Mudslide
-    "landslide", "mudslide", "soil erosion", "slope failure",
-    "pagguho ng lupa", "nangurog",  
-    "#landslide", "#LandslideAlert", "#LandslidePH",
-
-    # Earthquake
-    "earthquake", "aftershock", "ground shaking", "seismic",
-    "linog", "pagyanig",       
-    "#EarthquakeAlert", "#EarthquakePH",
-
-    # Tsunami
-    "tsunami", "tidal wave", "sea surge", "coastal surge",
-    "daluyong",                     
-    "#tsunami",
-
-    # Fire / Wildfire
-    "fire", "blaze", "burning", "wildfire",
-    "sunog", "nasunog","apoy",            
-    "#FireAlert",
-
-    # Volcano
-    "volcano", "volcanic", "eruption", "ashfall", "lava",
-    "bulkan", "pagputok ng bulkan",  
-    "#volcano",
-
-    # General disaster / emergency
-    "disaster", "emergency", "rescue", "relief",
-    "evacuation", "#evacuation",
-
-    # Warnings & Alerts
-    "warning", "alert", "advisory", "bulletin",
-    "babala", "abiso",              
-    "#warning", "#alert",
-
-    # Tagalog / Cebuano extras
-    "pag-uga", "pagbaha", "paglikas", "malakas na ulan",
-    "mainit na bato", "kalamidad", "sakuna",
-    "pahimangno", "pasidaan",
-
-    # Bisaya / Cebuano extras
-    "nahulog ang yuta", "nabahaan",
-    "kusog nga ulan", "ting-ulan",
-    "kasamok", "tabang"
-]
-
-# === Chrome Driver Setup ===
+# Chrome Driver Setup 
 options = Options()
 options.add_argument("--headless=new")
 options.add_argument("--disable-gpu")
@@ -109,13 +35,12 @@ options.add_argument(
 )
 driver = webdriver.Chrome(options=options)
 
-
-# === Helper Functions ===
-def scroll_page(scroll_times=15):
+# Helper Functions
+def scroll_page(scroll_times=40):
     last = driver.execute_script("return document.body.scrollHeight")
     for _ in range(scroll_times):
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-        time.sleep(3)
+        time.sleep(2)
         nxt = driver.execute_script("return document.body.scrollHeight")
         if nxt == last:
             break
@@ -178,8 +103,8 @@ def process_articles(source_type, identifier, is_hashtag=False):
 
         low = text.lower()
 
-        # region filter only for hashtags
-        if is_hashtag and ('davao' not in low and 'philippines' not in low):
+        # region filter only for FB_HASHTAGS
+        if is_hashtag and ('davao' not in low or 'philippines' not in low):
             continue
 
         if not any(k in low for k in KEYWORDS):
@@ -216,22 +141,22 @@ def process_articles(source_type, identifier, is_hashtag=False):
 # MAIN LOOP
 
 # 1) Scrape each page's /posts feed
-for pg in PAGES:
+for pg in FB_PAGES:
     feed_url = f"https://www.facebook.com/{pg.rstrip('/')}/posts" 
-    logging.info(f"*** Scraping PAGE feed: {feed_url}")
+    logging.info(f"[fb_page] Visiting {feed_url}")
     driver.get(feed_url)
     time.sleep(5)
     scroll_page()
-    process_articles("Page", pg, is_hashtag=False)
+    process_articles("fb_page", pg, is_hashtag=False)
 
 # 2) Scrape each hashtag page
-for tag in HASHTAGS:
+for tag in FB_HASHTAGS:
     tag_url = f"https://www.facebook.com/hashtag/{tag}"
-    logging.info(f" - Searching hashtag: #{tag}")
+    logging.info(f"[fb_search] Visiting  #{tag}")
     driver.get(tag_url)
     time.sleep(5)
     scroll_page()
-    process_articles("Hashtag", f"#{tag}", is_hashtag=True)
+    process_articles("fb_search", f"#{tag}", is_hashtag=True)
 
 driver.quit()
 
