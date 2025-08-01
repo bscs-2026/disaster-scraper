@@ -36,11 +36,11 @@ options.add_argument(
 driver = webdriver.Chrome(options=options)
 
 # Helper Functions
-def scroll_page(scroll_times=40):
+def scroll_page(scroll_times=60, pause=1):
     last = driver.execute_script("return document.body.scrollHeight")
     for _ in range(scroll_times):
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-        time.sleep(2)
+        time.sleep(pause)
         nxt = driver.execute_script("return document.body.scrollHeight")
         if nxt == last:
             break
@@ -102,10 +102,6 @@ def process_articles(source_type, identifier, is_hashtag=False):
             continue
 
         low = text.lower()
-
-        # region filter only for FB_HASHTAGS
-        if is_hashtag and ('davao' not in low or 'philippines' not in low):
-            continue
 
         if not any(k in low for k in KEYWORDS):
             continue

@@ -1,41 +1,42 @@
 # Facebook user and search query scraper configuration
 FACEBOOK = {
-
     "users": [
-        'abscbnNEWS', 'rapplerdotcom', 'gmanews',
-        'manilabulletin', 'sunstarphilippines', 'PhilstarNews',
-        'inquirerdotnet', 'pagasa.dost.gov.ph', 'davaocitydrmmc',
-        'NDRRMC', 'UNTVNewsRescue', 'PIAgovernment', 'DavaoDRRMO',
-        'sunstardavaonews','PHIVOLCS', 'mrpsd.com.ph'
+        "abscbnNEWS", "BFPRHQ11", "civildefensedavao", "davaocitydrmmc", 
+        "DavaoDRRMO", "davaocitydisasterradio",
+        "gmanews", "inquirerdotnet", 
+        "manilabulletin", "mprsdcdo", "mindanews"
+        "mrpsd.com.ph", "NDRRMC", "pagasa.dost.gov.ph",
+        "PhilstarNews", "PHIVOLCS", "PIAgovernment",
+        "rapplerdotcom", "sunstardavaonews", "sunstarphilippines",
+        "UNTVNewsRescue", "weather.davao"
     ],
 
     "search_queries": [
-        'FloodAlert', 'BahaPH', 
-        'StreetFloodAlert', 'tsunamialert',
-        'LandslideAlert', 'LandslidePH', 
-        'FireAlert', '#FireandRescuePH', 
-        'EarthquakeAlert', 'EarthquakePH',
-        'RescuePH'
-    ],
+        "BahaPH", "EarthquakeAlert", "EarthquakePH",
+        "FireAlert", "FireandRescuePH", "FloodAlert",
+        "LandslideAlert", "LandslidePH", "RescuePH",
+        "StreetFloodAlert", "tsunamialert"
+    ]
 }
 
 # X user and search query scraper configuration
 X = {
     "users": [
-        "ABSCBNNews", "rapplerdotcom", "gmanews",
-        "dost_pagasa", "inquirerdotnet", "phivolcs_dost",
-        "NDRRMC_OpCen",
+        "ABSCBNNews", "dost_pagasa", "gmanews",
+        "inquirerdotnet", "mindanewsdotcom", "NDRRMC_OpCen", 
+        "News5PH", "PhilstarNews", "phivolcs_dost", "PilipinasToday_"
+        "rapplerdotcom", "SunStarDavao", "TVPatrol"
     ],
 
     "search_queries": [
-        "flood philippines", "Flood in Davao",
-        "landslide philippines", "Landslide in Davao",
-        "earthquake philippines", "Earthquake in Davao",
-        "typhoon philippines", "Typhoon in Davao",
-        "fire philippines", "Fire in Davao",
-        "volcano eruption philippines", "Volcano eruption Davao",
-        "disaster news philippines", "Disaster news Davao"
-    ],
+        "Disaster news Davao", "disaster news philippines",
+        "Earthquake in Davao", "earthquake philippines",
+        "Fire in Davao", "fire philippines",
+        "Flood in Davao", "flood philippines",
+        "Landslide in Davao", "landslide philippines",
+        "Typhoon in Davao", "typhoon philippines",
+        "Volcano eruption Davao", "volcano eruption philippines"
+    ]
 }
 
 # keywords for filtering disaster-related posts
@@ -43,18 +44,21 @@ KEYWORDS = [
     # Typhoon / Storm
     "typhoon", "storm", "storm surge",
     "tropical storm", "tropical depression",
-    "bagyo", "unos", "thunderstorm",       
+    "super typhoon", "tropical cyclone",   
+    "bagyo", "unos", "thunderstorm", "lightning",
+    "malakas na bagyo", "malakas na hangin", 
     "#typhoon", "#storm" 
 
     # Rain / Weather
-    "weather", "rain", "raining", "rainfall", "downpour", "showers",
-    "drizzle", "heavy rain", "monsoon",
+    "rain", "raining", "rainfall",
+    "heavy rain", "monsoon",
     "LPA", "low pressure area",
     "malakas na ulan",
     
     # Flood (and related)
-    "flood", "flooding", "flash flood", "river overflow",
-    "baha", "lunop", "Street Flood",      
+    "flood", "flooding", "flash flood", "river overflow", 
+    "street flood", "baha", "lunop",
+    "pagbaha", "paglunop", "flood alert",   
     "#flood", "#FloodAlert", "#BahaPH", "#StreetFloodAlert",
 
     # Landslide / Mudslide
@@ -64,7 +68,7 @@ KEYWORDS = [
 
     # Earthquake
     "earthquake", "aftershock", "ground shaking", "seismic",
-    "linog", "pagyanig",       
+    "lindol", "linog", "pagyanig",       
     "#EarthquakeAlert", "#EarthquakePH",
 
     # Tsunami
@@ -84,7 +88,7 @@ KEYWORDS = [
 
     # General disaster / emergency
     "disaster", "emergency", "rescue", "relief",
-    "evacuation", "#evacuation",
+    "evacuate", "evacuation", "evacuated", "#evacuation",
 
     # Warnings & Alerts
     "warning", "alert", "advisory", "bulletin",
@@ -99,5 +103,5 @@ KEYWORDS = [
     # Bisaya / Cebuano extras
     "nahulog ang yuta", "nabahaan",
     "kusog nga ulan", "ting-ulan",
-    "kasamok", "tabang"
+    "tabang"
 ]

@@ -33,11 +33,11 @@ opts.add_argument(
 )
 driver = webdriver.Chrome(options=opts)
 
-def scroll_page(times=40):
+def scroll_page(scroll_times=60, pause=1):
     last = driver.execute_script("return document.body.scrollHeight")
-    for _ in range(times):
+    for _ in range(scroll_times):
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-        time.sleep(2)
+        time.sleep(pause)
         nxt = driver.execute_script("return document.body.scrollHeight")
         if nxt == last:
             break
