@@ -1,72 +1,72 @@
-Source,Query/Page,Text,Post Timestamp,Scraped Timestamp,User,Post URL
-x_user,dost_pagasa,"Thunderstorm Advisory No. 5 #NCR_PRSD
+source,query_page,text,post_timestamp,scraped_timestamp,user,post_url,Source,Query/Page,Text,Post Timestamp,Scraped Timestamp,User,Post URL
+X,dost_pagasa,"Thunderstorm Advisory No. 5 #NCR_PRSD
 Issued at: 1:20 AM, 26 July 2025(Saturday)
 
 Moderate to heavy rainshowers with lightning and strong winds are expected over Bulacan, Metro Manila, Rizal, Cavite and Batangas within the next 2 hours.
 
-The above conditions are being experienced",2025-07-26 01:29,2025-07-26 22:58,dost_pagasa,https://x.com/dost_pagasa/status/1948797678693089290
-x_user,dost_pagasa,"Thunderstorm Advisory No. 4 #NCR_PRSD
+The above conditions are being experienced",2025-07-26 01:29,2025-07-26 22:58,dost_pagasa,https://x.com/dost_pagasa/status/1948797678693089290,,,,,,,
+X,dost_pagasa,"Thunderstorm Advisory No. 4 #NCR_PRSD
 Issued at: 11:10 PM, 25 July 2025(Friday)
 
 Moderate to heavy rainshowers with lightning and strong winds are expected over Tarlac, Nueva Ecija, Metro Manila, Rizal and Quezon within the next 2 hours.
 
-The above conditions are being",2025-07-25 23:18,2025-07-26 22:58,dost_pagasa,https://x.com/dost_pagasa/status/1948764896247906453
-x_user,dost_pagasa,"TROPICAL CYCLONE BULLETIN NR. 19
+The above conditions are being",2025-07-25 23:18,2025-07-26 22:58,dost_pagasa,https://x.com/dost_pagasa/status/1948764896247906453,,,,,,,
+X,dost_pagasa,"TROPICAL CYCLONE BULLETIN NR. 19
 Tropical Storm #EmongPH (CO-MAY)
 Issued at 11:00 PM, 25 July 2025
 Valid for broadcast until the next bulletin at 5:00 AM tomorrow.
 
-“EMONG” SLIGHTLY WEAKENS AS IT CONTINUES TO MOVE AWAY FROM BATANES",2025-07-25 23:01,2025-07-26 22:58,dost_pagasa,https://x.com/dost_pagasa/status/1948760635078283764
-x_user,dost_pagasa,"Rainfall Advisory No. 1 #NCR_PRSD
+“EMONG” SLIGHTLY WEAKENS AS IT CONTINUES TO MOVE AWAY FROM BATANES",2025-07-25 23:01,2025-07-26 22:58,dost_pagasa,https://x.com/dost_pagasa/status/1948760635078283764,,,,,,,
+X,dost_pagasa,"Rainfall Advisory No. 1 #NCR_PRSD
 Weather System: Southwest Monsoon (Habagat)
 Issued at: 4:00 PM, 26 July 2025(Saturday)
 
 Light to moderate rains are expected over Tarlac, Cavite, Batangas, Laguna and Rizal.
 
-Light to moderate rains affecting Bataan, Pampanga, Bulacan, Metro",2025-07-26 16:01,2025-07-27 16:00,dost_pagasa,https://x.com/dost_pagasa/status/1949017326336045193
-x_user,dost_pagasa,"Thunderstorm Advisory No. 24 #NCR_PRSD
+Light to moderate rains affecting Bataan, Pampanga, Bulacan, Metro",2025-07-26 16:01,2025-07-27 16:00,dost_pagasa,https://x.com/dost_pagasa/status/1949017326336045193,,,,,,,
+X,dost_pagasa,"Thunderstorm Advisory No. 24 #NCR_PRSD
 Issued at: 12:50 AM, 28 July 2025(Monday)
 
 Moderate to heavy rainshowers with lightning and strong winds are expected over Metro Manila, Laguna, Tarlac, Pampanga, Bulacan, Rizal and Quezon within the next 2 hours.
 
-Heavy to intense",2025-07-28 00:53,2025-07-29 00:45,dost_pagasa,https://x.com/dost_pagasa/status/1949513553595265350
-x_user,dost_pagasa,"Thunderstorm Advisory No. 25 #NCR_PRSD
+Heavy to intense",2025-07-28 00:53,2025-07-29 00:45,dost_pagasa,https://x.com/dost_pagasa/status/1949513553595265350,,,,,,,
+X,dost_pagasa,"Thunderstorm Advisory No. 25 #NCR_PRSD
 Issued at: 2:55 AM, 28 July 2025(Monday)
 
 Moderate to heavy rainshowers with lightning and strong winds are expected over Zambales, Cavite and Batangas within the next 2 hours.
 
-The above conditions are being experienced in Bataan(Mariveles,",2025-07-28 03:02,2025-07-29 02:15,dost_pagasa,https://x.com/dost_pagasa/status/1949546012168929307
-x_user,dost_pagasa,"Thunderstorm Advisory No. 36 #NCR_PRSD
+The above conditions are being experienced in Bataan(Mariveles,",2025-07-28 03:02,2025-07-29 02:15,dost_pagasa,https://x.com/dost_pagasa/status/1949546012168929307,,,,,,,
+X,dost_pagasa,"Thunderstorm Advisory No. 36 #NCR_PRSD
 Issued at: 10:35 PM, 28 July 2025(Monday)
 
 Moderate to heavy rainshowers with lightning and strong winds are expected over Bulacan within the next 2 hours.
 
-The above conditions are being experienced in Pampanga(San Simon, San Luis, Apalit,",2025-07-28 22:41,2025-07-29 22:20,dost_pagasa,https://x.com/dost_pagasa/status/1949842649063817222
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeDavaoOriental
+The above conditions are being experienced in Pampanga(San Simon, San Luis, Apalit,",2025-07-28 22:41,2025-07-29 22:20,dost_pagasa,https://x.com/dost_pagasa/status/1949842649063817222,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeDavaoOriental
 Earthquake Information No.1
 Date and Time: 30 July 2025 - 05:59 AM
 Magnitude = 4.3
 Depth = 032 km
 Location = 07.46°N, 126.70°E - 019 km S 50° E of Baganga (Davao Oriental)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0729_2159_B1.html…",2025-07-30 06:04,2025-07-30 17:35,phivolcs_dost,https://x.com/phivolcs_dost/status/1950316464956985622
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeAgusanDelSur
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0729_2159_B1.html…",2025-07-30 06:04,2025-07-30 17:35,phivolcs_dost,https://x.com/phivolcs_dost/status/1950316464956985622,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeAgusanDelSur
 Earthquake Information No.1
 Date and Time: 30 July 2025 - 04:57 AM
 Magnitude = 2.1
 Depth = 033 km
 Location = 08.66°N, 125.66°E - 003 km S 40° E of Esperanza (Agusan Del Sur)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0729_2057_B1.html…",2025-07-30 05:09,2025-07-30 17:35,phivolcs_dost,https://x.com/phivolcs_dost/status/1950302811113349324
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeQuezon
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0729_2057_B1.html…",2025-07-30 05:09,2025-07-30 17:35,phivolcs_dost,https://x.com/phivolcs_dost/status/1950302811113349324,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeQuezon
 Earthquake Information No.2
 Date and Time: 30 July 2025 - 06:23 AM
 Magnitude = 2.1
 Depth = 023 km
 Location = 14.99°N, 121.44°E - 033 km N 37° W of General Nakar (Quezon)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0729_2223_B2.html…",2025-07-30 06:32,2025-07-30 18:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950323544564650438
-x_user,phivolcs_dost,"BULKANG MAYON
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0729_2223_B2.html…",2025-07-30 06:32,2025-07-30 18:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950323544564650438,,,,,,,
+X,phivolcs_dost,"BULKANG MAYON
 Buod ng 24 oras na pagmamanman
 30 Hulyo 2025 alas-12 ng umaga 
 
@@ -81,32 +81,32 @@ https://phivolcs.dost.gov.ph/volcano-hazard/volcano-bulletin2/mayon-volcano/3255
 Volcano: Mayon
 Alert Level: 1
 Status Alert Level: Bahagyang aktibidad 
-Volcanic Earthquake: 0 volcanic earthquakes",2025-07-30 06:28,2025-07-30 18:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950322551374430559
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeQuezon
+Volcanic Earthquake: 0 volcanic earthquakes",2025-07-30 06:28,2025-07-30 18:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950322551374430559,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeQuezon
 Earthquake Information No.1
 Date and Time: 30 July 2025 - 06:23 AM
 Magnitude = 2.6
 Depth = 020 km
 Location = 14.97°N, 121.43°E - 031 km N 41° W of General Nakar (Quezon)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0729_2223_B1.html…",2025-07-30 06:26,2025-07-30 18:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950322085827662198
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeDavaoOriental
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0729_2223_B1.html…",2025-07-30 06:26,2025-07-30 18:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950322085827662198,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeDavaoOriental
 Earthquake Information No.2
 Date and Time: 30 July 2025 - 05:59 AM
 Magnitude = 4.0
 Depth = 043 km
 Location = 07.48°N, 126.68°E - 017 km S 51° E of Baganga (Davao Oriental)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0729_2159_B2.html…",2025-07-30 06:12,2025-07-30 18:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950318468395651261
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelSur
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0729_2159_B2.html…",2025-07-30 06:12,2025-07-30 18:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950318468395651261,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelSur
 Earthquake Information No.1
 Date and Time: 30 July 2025 - 10:18 AM
 Magnitude = 3.1
 Depth = 025 km
 Location = 08.33°N, 127.38°E - 112 km N 73° E of Lingig (Surigao Del Sur)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_0218_B1F.html…",2025-07-30 10:29,2025-07-30 23:17,phivolcs_dost,https://x.com/phivolcs_dost/status/1950383146937249870
-x_user,phivolcs_dost,"#TsunamiPH
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_0218_B1F.html…",2025-07-30 10:29,2025-07-30 23:17,phivolcs_dost,https://x.com/phivolcs_dost/status/1950383146937249870,,,,,,,
+X,phivolcs_dost,"#TsunamiPH
 
 ADVISORY: MINOR SEA-LEVEL DISTURBANCE
 
@@ -115,40 +115,40 @@ Date and Time: 30 Jul 2025 - 07:25 AM
 Magnitude = 8.7
 Depth = 074 kilometers
 Location = 52.2°N, 160.0°E - Off The East Coast Of Kamchatka, Russia
-https://tsunami.phivolcs.dost.gov.ph/Tsunami_Information/2025_Tsunami_Information/Jul/29/20250729_2325z_Advisory2_1.html…",2025-07-30 09:33,2025-07-30 23:17,phivolcs_dost,https://x.com/phivolcs_dost/status/1950369246023942559
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelSur
+https://tsunami.phivolcs.dost.gov.ph/Tsunami_Information/2025_Tsunami_Information/Jul/29/20250729_2325z_Advisory2_1.html…",2025-07-30 09:33,2025-07-30 23:17,phivolcs_dost,https://x.com/phivolcs_dost/status/1950369246023942559,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelSur
 Earthquake Information No.1
 Date and Time: 30 July 2025 - 09:17 AM
 Magnitude = 3.1
 Depth = 013 km
 Location = 08.30°N, 127.35°E - 107 km N 74° E of Lingig (Surigao Del Sur)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_0117_B1F.html…",2025-07-30 09:27,2025-07-30 23:17,phivolcs_dost,https://x.com/phivolcs_dost/status/1950367634056470711
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeCatanduanes
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_0117_B1F.html…",2025-07-30 09:27,2025-07-30 23:17,phivolcs_dost,https://x.com/phivolcs_dost/status/1950367634056470711,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeCatanduanes
 Earthquake Information No.1
 Date and Time: 30 July 2025 - 08:54 AM
 Magnitude = 2.5
 Depth = 033 km
 Location = 13.49°N, 124.01°E - 016 km S 41° W of San Andres (Catanduanes)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_0054_B1.html…",2025-07-30 09:03,2025-07-30 23:17,phivolcs_dost,https://x.com/phivolcs_dost/status/1950361651582292373
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeSultanKudarat
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_0054_B1.html…",2025-07-30 09:03,2025-07-30 23:17,phivolcs_dost,https://x.com/phivolcs_dost/status/1950361651582292373,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeSultanKudarat
 Earthquake Information No.1
 Date and Time: 30 July 2025 - 08:05 AM
 Magnitude = 3.5
 Depth = 097 km
 Location = 06.57°N, 124.04°E - 002 km N 45° W of Kalamansig (Sultan Kudarat)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_0005_B1.html…",2025-07-30 08:14,2025-07-30 23:17,phivolcs_dost,https://x.com/phivolcs_dost/status/1950349188233122269
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeBatangas
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_0005_B1.html…",2025-07-30 08:14,2025-07-30 23:17,phivolcs_dost,https://x.com/phivolcs_dost/status/1950349188233122269,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeBatangas
 Earthquake Information No.1
 Date and Time: 31 July 2025 - 04:51 AM
 Magnitude = 1.9
 Depth = 111 km
 Location = 13.61°N, 120.72°E - 017 km S 71° W of Tingloy (Batangas)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_2051_B1.html…",2025-07-31 04:57,2025-07-31 14:30,phivolcs_dost,https://x.com/phivolcs_dost/status/1950662080841056750
-x_user,phivolcs_dost,"BULKANG BULUSAN
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_2051_B1.html…",2025-07-31 04:57,2025-07-31 14:30,phivolcs_dost,https://x.com/phivolcs_dost/status/1950662080841056750,,,,,,,
+X,phivolcs_dost,"BULKANG BULUSAN
 Buod ng 24 oras na pagmamanman
 31 Hulyo 2025 alas-12 ng umaga 
 
@@ -163,9 +163,9 @@ https://phivolcs.dost.gov.ph/volcano-hazard/volcano-bulletin2/bulusan-volcano/32
 Volcano: Bulusan
 Alert Level: 1
 Status Alert Level: Bahagyang aktibidad 
-Volcanic Earthquake: 0 volcanic",2025-07-31 05:00,2025-07-31 15:15,phivolcs_dost,https://x.com/phivolcs_dost/status/1950662693037167100
-x_user,phivolcs_dost,#BulusanVolcano,2025-07-31 05:01,2025-07-31 15:15,phivolcs_dost,https://x.com/phivolcs_dost/status/1950663029710028826
-x_user,phivolcs_dost,"BULKANG KANLAON
+Volcanic Earthquake: 0 volcanic",2025-07-31 05:00,2025-07-31 15:15,phivolcs_dost,https://x.com/phivolcs_dost/status/1950662693037167100,,,,,,,
+X,phivolcs_dost,#BulusanVolcano,2025-07-31 05:01,2025-07-31 15:15,phivolcs_dost,https://x.com/phivolcs_dost/status/1950663029710028826,,,,,,,
+X,phivolcs_dost,"BULKANG KANLAON
 Buod ng 24 oras na pagmamanman
 31 Hulyo 2025 alas-12 ng umaga 
 
@@ -180,89 +180,88 @@ https://phivolcs.dost.gov.ph/volcano-hazard/volcano-bulletin2/kanlaon-volcano/32
 Volcano: Kanlaon
 Alert Level: 2
 Status Alert Level: Pagtaas ng aktibidad 
-Volcanic Earthquake: 4 volcanic",2025-07-31 05:00,2025-07-31 15:15,phivolcs_dost,https://x.com/phivolcs_dost/status/1950662693603393638
-x_user,phivolcs_dost,#KanlaonVolcano,2025-07-31 05:01,2025-07-31 15:15,phivolcs_dost,https://x.com/phivolcs_dost/status/1950662939889070246
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeDavaoOccidental
+Volcanic Earthquake: 4 volcanic",2025-07-31 05:00,2025-07-31 15:15,phivolcs_dost,https://x.com/phivolcs_dost/status/1950662693603393638,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeDavaoOccidental
 Earthquake Information No.1
 Date and Time: 31 July 2025 - 04:58 AM
 Magnitude = 3.3
 Depth = 146 km
 Location = 06.01°N, 126.10°E - 050 km S 65° E of Don Marcelino (Davao Occidental)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_2058_B1.html…",2025-07-31 05:07,2025-07-31 16:30,phivolcs_dost,https://x.com/phivolcs_dost/status/1950664628268310980
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelSur
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_2058_B1.html…",2025-07-31 05:07,2025-07-31 16:30,phivolcs_dost,https://x.com/phivolcs_dost/status/1950664628268310980,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelSur
 Earthquake Information No.1
 Date and Time: 31 July 2025 - 06:37 AM
 Magnitude = 2.3
 Depth = 066 km
 Location = 08.11°N, 127.33°E - 101 km N 86° E of Lingig (Surigao Del Sur)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_2237_B1.html…",2025-07-31 06:44,2025-07-31 20:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950689099138142538
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeBiliran
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_2237_B1.html…",2025-07-31 06:44,2025-07-31 20:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950689099138142538,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeBiliran
 Earthquake Information No.1
 Date and Time: 31 July 2025 - 06:16 AM
 Magnitude = 2.3
 Depth = 006 km
 Location = 11.62°N, 124.32°E - 006 km West of Almeria (Biliran)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_2216_B1.html…",2025-07-31 06:24,2025-07-31 20:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950684014509219959
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeCatanduanes
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_2216_B1.html…",2025-07-31 06:24,2025-07-31 20:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950684014509219959,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeCatanduanes
 Earthquake Information No.1
 Date and Time: 31 July 2025 - 06:03 AM
 Magnitude = 1.6
 Depth = 035 km
 Location = 13.62°N, 124.20°E - 006 km N 41° W of Virac (Catanduanes)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_2203_B1.html…",2025-07-31 06:17,2025-07-31 20:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950682264351957276
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeAurora
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_2203_B1.html…",2025-07-31 06:17,2025-07-31 20:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950682264351957276,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeAurora
 Earthquake Information No.1
 Date and Time: 31 July 2025 - 05:43 AM
 Magnitude = 1.8
 Depth = 004 km
 Location = 15.69°N, 121.98°E - 045 km S 80° E of Baler (Aurora)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_2143_B1.html…",2025-07-31 05:49,2025-07-31 20:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950675224980333020
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeCatanduanes
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_2143_B1.html…",2025-07-31 05:49,2025-07-31 20:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950675224980333020,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeCatanduanes
 Earthquake Information No.1
 Date and Time: 31 July 2025 - 09:05 AM
 Magnitude = 2.5
 Depth = 003 km
 Location = 14.17°N, 125.17°E - 094 km N 63° E of Gigmoto (Catanduanes)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_0105_B1.html…",2025-07-31 09:13,2025-07-31 22:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950726592826880311
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeDavaoOriental
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_0105_B1.html…",2025-07-31 09:13,2025-07-31 22:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950726592826880311,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeDavaoOriental
 Earthquake Information No.1
 Date and Time: 31 July 2025 - 07:30 AM
 Magnitude = 2.7
 Depth = 123 km
 Location = 06.80°N, 126.71°E - 040 km S 47° E of Tarragona (Davao Oriental)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_2330_B1.html…",2025-07-31 07:40,2025-07-31 22:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950703134659190938
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeDavaoDelNorte
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_2330_B1.html…",2025-07-31 07:40,2025-07-31 22:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950703134659190938,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeDavaoDelNorte
 Earthquake Information No.1
 Date and Time: 31 July 2025 - 07:25 AM
 Magnitude = 2.4
 Depth = 019 km
 Location = 06.93°N, 125.61°E - 020 km S 34° W of Island Garden City Of Samal (Davao Del Norte)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_2325_B1.html…",2025-07-31 07:33,2025-07-31 22:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950701215484092692
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeZambales
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_2325_B1.html…",2025-07-31 07:33,2025-07-31 22:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950701215484092692,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeZambales
 Earthquake Information No.1
 Date and Time: 31 July 2025 - 06:57 AM
 Magnitude = 3.1
 Depth = 003 km
 Location = 15.12°N, 119.20°E - 084 km S 66° W of Palauig (Zambales)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_2257_B1.html…",2025-07-31 07:06,2025-07-31 22:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950694498234949654
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelSur
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_2257_B1.html…",2025-07-31 07:06,2025-07-31 22:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950694498234949654,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelSur
 Earthquake Information No.1
 Date and Time: 31 July 2025 - 06:52 AM
 Magnitude = 1.9
 Depth = 030 km
 Location = 09.36°N, 126.28°E - 013 km N 44° E of Cortes (Surigao Del Sur)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_2252_B1.html…",2025-07-31 06:58,2025-07-31 22:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950692458742083746
-x_user,phivolcs_dost,"BULKANG KANLAON
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0730_2252_B1.html…",2025-07-31 06:58,2025-07-31 22:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1950692458742083746,,,,,,,
+X,phivolcs_dost,"BULKANG KANLAON
 (UPDATED)
 Buod ng 24 oras na pagmamanman 
 31 Hulyo 2025 alas-12 ng umaga   
@@ -272,127 +271,127 @@ Filipino:  https://phivolcs.dost.gov.ph/volcano-hazard/volcano-bulletin2/kanlaon
 English:  https://phivolcs.dost.gov.ph/volcano-hazard/volcano-bulletin2/kanlaon-volcano/32560-kanlaon-volcano-summary-of-24hr-observation-31-july-2025-12-00-am…
 
 Volcano: Kanlaon Alert Level: 2 
-Status Alert Level: Pagtaas ng aktibidad  Volcanic Earthquake: 4",2025-07-31 14:04,2025-07-31 22:30,phivolcs_dost,https://x.com/phivolcs_dost/status/1950799814729646469
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeZambales
+Status Alert Level: Pagtaas ng aktibidad  Volcanic Earthquake: 4",2025-07-31 14:04,2025-07-31 22:30,phivolcs_dost,https://x.com/phivolcs_dost/status/1950799814729646469,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeZambales
 Earthquake Information No.1
 Date and Time: 31 July 2025 - 12:45 PM
 Magnitude = 4.2
 Depth = 010 km
 Location = 15.14°N, 119.09°E - 093 km S 70° W of Palauig (Zambales)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_0445_B1.html…",2025-07-31 12:51,2025-07-31 22:30,phivolcs_dost,https://x.com/phivolcs_dost/status/1950781285934477632
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeCamarinesSur
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_0445_B1.html…",2025-07-31 12:51,2025-07-31 22:30,phivolcs_dost,https://x.com/phivolcs_dost/status/1950781285934477632,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeCamarinesSur
 Earthquake Information No.1
 Date and Time: 31 July 2025 - 12:12 PM
 Magnitude = 3.7
 Depth = 090 km
 Location = 14.06°N, 123.16°E - 011 km N 69° W of Siruma (Camarines Sur)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_041216_B1.html…",2025-07-31 12:20,2025-07-31 22:30,phivolcs_dost,https://x.com/phivolcs_dost/status/1950773586450608268
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeDavaoOriental
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_041216_B1.html…",2025-07-31 12:20,2025-07-31 22:30,phivolcs_dost,https://x.com/phivolcs_dost/status/1950773586450608268,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeDavaoOriental
 Earthquake Information No.1
 Date and Time: 31 July 2025 - 12:02 PM
 Magnitude = 3.2
 Depth = 031 km
 Location = 06.54°N, 126.19°E - 018 km S 46° E of Governor Generoso (Davao Oriental)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_0402_B1.html…",2025-07-31 12:15,2025-07-31 22:30,phivolcs_dost,https://x.com/phivolcs_dost/status/1950772367820812477
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelSur
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_0402_B1.html…",2025-07-31 12:15,2025-07-31 22:30,phivolcs_dost,https://x.com/phivolcs_dost/status/1950772367820812477,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelSur
 Earthquake Information No.1
 Date and Time: 31 July 2025 - 11:40 AM
 Magnitude = 2.9
 Depth = 010 km
 Location = 09.20°N, 126.83°E - 065 km N 67° E of Bayabas (Surigao Del Sur)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_0340_B1.html…",2025-07-31 12:04,2025-07-31 22:30,phivolcs_dost,https://x.com/phivolcs_dost/status/1950769576679219299
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeDavaoDeOro
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_0340_B1.html…",2025-07-31 12:04,2025-07-31 22:30,phivolcs_dost,https://x.com/phivolcs_dost/status/1950769576679219299,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeDavaoDeOro
 Earthquake Information No.1
 Date and Time: 01 August 2025 - 03:53 AM
 Magnitude = 1.7
 Depth = 031 km
 Location = 07.62°N, 126.06°E - 006 km S 27° W of Compostela (Davao De Oro)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_195309_B1.html…",2025-08-01 04:04,2025-08-01 09:46,phivolcs_dost,https://x.com/phivolcs_dost/status/1951011219063840868
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelSur
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_195309_B1.html…",2025-08-01 04:04,2025-08-01 09:46,phivolcs_dost,https://x.com/phivolcs_dost/status/1951011219063840868,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelSur
 Earthquake Information No.1
 Date and Time: 01 August 2025 - 03:37 AM
 Magnitude = 2.2
 Depth = 020 km
 Location = 08.44°N, 127.02°E - 076 km N 84° E of Hinatuan (Surigao Del Sur)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_1937_B1.html…",2025-08-01 03:44,2025-08-01 09:46,phivolcs_dost,https://x.com/phivolcs_dost/status/1951006169608364523
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelSur
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_1937_B1.html…",2025-08-01 03:44,2025-08-01 09:46,phivolcs_dost,https://x.com/phivolcs_dost/status/1951006169608364523,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelSur
 Earthquake Information No.1
 Date and Time: 01 August 2025 - 03:35 AM
 Magnitude = 2.1
 Depth = 023 km
 Location = 08.41°N, 127.06°E - 079 km N 87° E of Hinatuan (Surigao Del Sur)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_1935_B1.html…",2025-08-01 03:44,2025-08-01 09:46,phivolcs_dost,https://x.com/phivolcs_dost/status/1951006037257101682
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelNorte
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_1935_B1.html…",2025-08-01 03:44,2025-08-01 09:46,phivolcs_dost,https://x.com/phivolcs_dost/status/1951006037257101682,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelNorte
 Earthquake Information No.1
 Date and Time: 01 August 2025 - 03:31 AM
 Magnitude = 1.4
 Depth = 032 km
 Location = 09.62°N, 126.26°E - 021 km S 32° E of General Luna (Surigao Del Norte)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_1931_B1.html…",2025-08-01 03:40,2025-08-01 09:46,phivolcs_dost,https://x.com/phivolcs_dost/status/1951004942581506469
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeEasternSamar
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_1931_B1.html…",2025-08-01 03:40,2025-08-01 09:46,phivolcs_dost,https://x.com/phivolcs_dost/status/1951004942581506469,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeEasternSamar
 Earthquake Information No.1
 Date and Time: 01 August 2025 - 02:55 AM
 Magnitude = 2.3
 Depth = 012 km
 Location = 10.83°N, 125.75°E - 010 km N 18° E of Homonhon Island (Guiuan) (Eastern Samar)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_1855_B1.html…",2025-08-01 03:06,2025-08-01 09:46,phivolcs_dost,https://x.com/phivolcs_dost/status/1950996620289646641
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeIlocosNorte
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_1855_B1.html…",2025-08-01 03:06,2025-08-01 09:46,phivolcs_dost,https://x.com/phivolcs_dost/status/1950996620289646641,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeIlocosNorte
 Earthquake Information No.1
 Date and Time: 01 August 2025 - 04:52 AM
 Magnitude = 2.0
 Depth = 031 km
 Location = 18.19°N, 120.49°E - 010 km S 88° W of City Of Laoag (Ilocos Norte)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_2052_B1.html…",2025-08-01 04:59,2025-08-01 11:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1951024882864758940
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeDavaoOccidental
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_2052_B1.html…",2025-08-01 04:59,2025-08-01 11:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1951024882864758940,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeDavaoOccidental
 Earthquake Information No.1
 Date and Time: 01 August 2025 - 04:35 AM
 Magnitude = 2.9
 Depth = 125 km
 Location = 05.91°N, 126.26°E - 068 km S 90° E of Jose Abad Santos (Davao Occidental)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_2035_B1.html…",2025-08-01 04:44,2025-08-01 11:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1951021070187999678
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeDavaoDeOro
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_2035_B1.html…",2025-08-01 04:44,2025-08-01 11:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1951021070187999678,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeDavaoDeOro
 Earthquake Information No.1
 Date and Time: 01 August 2025 - 03:54 AM
 Magnitude = 1.5
 Depth = 035 km
 Location = 07.63°N, 126.05°E - 006 km S 44° W of Compostela (Davao De Oro)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_1954_B1.html…",2025-08-01 04:06,2025-08-01 11:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1951011645314179263
-x_user,dost_pagasa,"Thunderstorm Advisory No. 1 #NCR_PRSD
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/July/2025_0731_1954_B1.html…",2025-08-01 04:06,2025-08-01 11:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1951011645314179263,,,,,,,
+X,dost_pagasa,"Thunderstorm Advisory No. 1 #NCR_PRSD
 Issued at: 10:42 AM, 01 August 2025(Friday)
 
 Moderate to heavy rainshowers with lightning and strong winds are expected over Zambales, Bataan, Pampanga and Tarlac within the next 2 hours.
 
-All are advised to take precautionary measures",2025-08-01 10:43,2025-08-01 14:16,dost_pagasa,https://x.com/dost_pagasa/status/1951111413860278283
-x_user,dost_pagasa,"Thunderstorm Watch #NCR_PRSD
+All are advised to take precautionary measures",2025-08-01 10:43,2025-08-01 14:16,dost_pagasa,https://x.com/dost_pagasa/status/1951111413860278283,,,,,,,
+X,dost_pagasa,"Thunderstorm Watch #NCR_PRSD
 Issued at: 10:00 AM, 01 August 2025
 
 Thunderstorm is MORE LIKELY to develop over Greater Metro Manila Area(Metro Manila, Bulacan, Rizal, Laguna and Cavite) within 12 hours.
 
-All are advised to continue monitoring for updates.",2025-08-01 10:00,2025-08-01 14:16,dost_pagasa,https://x.com/dost_pagasa/status/1951100572645409067
-x_user,NDRRMC_OpCen,"Summary of 24-Hour Observation of Active Volcanoes
+All are advised to continue monitoring for updates.",2025-08-01 10:00,2025-08-01 14:16,dost_pagasa,https://x.com/dost_pagasa/status/1951100572645409067,,,,,,,
+X,NDRRMC_OpCen,"Summary of 24-Hour Observation of Active Volcanoes
 Mt. Taal, Mayon, Bulusan and Kanlaon
 01 August 2025
 Source: Philippine Institute of Volcanology and Seismology (PHIVOLCS-DOST)
 #NDRRMC
-#BawatSegundoMahalaga",2025-08-01 06:53,2025-08-01 14:16,NDRRMC_OpCen,https://x.com/NDRRMC_OpCen/status/1951053584377974801
-x_user,NDRRMC_OpCen,"DISASTER RESPONSE UPDATE | The Office of Civil Defense-Cordillera Administrative Region (OCD-CAR) provided non-food items/shelter repair kits/Family Hygiene kits today, 31 July 2025, to the Baguio City Police Office (BCPO) and Fairview Barangay in support of its ongoing",2025-08-01 10:36,2025-08-01 14:16,NDRRMC_OpCen,https://x.com/NDRRMC_OpCen/status/1951109830829285545
-x_user,NDRRMC_OpCen,"As of 8:00 AM today, 01 August 2025, the Low Pressure Area (LPA 07j) OUTSIDE the Philippine Area of Responsibility (PAR) still has a ""HIGH"" chance of developing into a Tropical Depression within the next 24 hours.
+#BawatSegundoMahalaga",2025-08-01 06:53,2025-08-01 14:16,NDRRMC_OpCen,https://x.com/NDRRMC_OpCen/status/1951053584377974801,,,,,,,
+X,NDRRMC_OpCen,"DISASTER RESPONSE UPDATE | The Office of Civil Defense-Cordillera Administrative Region (OCD-CAR) provided non-food items/shelter repair kits/Family Hygiene kits today, 31 July 2025, to the Baguio City Police Office (BCPO) and Fairview Barangay in support of its ongoing",2025-08-01 10:36,2025-08-01 14:16,NDRRMC_OpCen,https://x.com/NDRRMC_OpCen/status/1951109830829285545,,,,,,,
+X,NDRRMC_OpCen,"As of 8:00 AM today, 01 August 2025, the Low Pressure Area (LPA 07j) OUTSIDE the Philippine Area of Responsibility (PAR) still has a ""HIGH"" chance of developing into a Tropical Depression within the next 24 hours.
 
 #NDRRMC
-#BawatSegundoMahalaga",2025-08-01 10:35,2025-08-01 14:16,NDRRMC_OpCen,https://x.com/NDRRMC_OpCen/status/1951109601333747902
-x_user,phivolcs_dost,"BULKANG TAAL
+#BawatSegundoMahalaga",2025-08-01 10:35,2025-08-01 14:16,NDRRMC_OpCen,https://x.com/NDRRMC_OpCen/status/1951109601333747902,,,,,,,
+X,phivolcs_dost,"BULKANG TAAL
 Buod ng 24 oras na pagmamanman
 01 Agosto 2025 alas-12 ng umaga 
 
@@ -407,9 +406,8 @@ https://phivolcs.dost.gov.ph/volcano-hazard/volcano-bulletin2/taal-volcano/32575
 Volcano: Taal
 Alert Level: 1
 Status Alert Level: Bahagyang aktibidad 
-Volcanic Earthquake: 0 volcanic earthquake",2025-08-01 05:00,2025-08-01 16:48,phivolcs_dost,https://x.com/phivolcs_dost/status/1951025077442527601
-x_user,phivolcs_dost,#TaalVolcano,2025-08-01 05:07,2025-08-01 16:48,phivolcs_dost,https://x.com/phivolcs_dost/status/1951027066062905447
-x_user,phivolcs_dost,"BULKANG MAYON
+Volcanic Earthquake: 0 volcanic earthquake",2025-08-01 05:00,2025-08-01 16:48,phivolcs_dost,https://x.com/phivolcs_dost/status/1951025077442527601,,,,,,,
+X,phivolcs_dost,"BULKANG MAYON
 Buod ng 24 oras na pagmamanman
 01 Agosto 2025 alas-12 ng umaga 
 
@@ -424,82 +422,171 @@ https://phivolcs.dost.gov.ph/volcano-hazard/volcano-bulletin2/mayon-volcano/3257
 Volcano: Mayon
 Alert Level: 1
 Status Alert Level: Bahagyang aktibidad 
-Volcanic Earthquake: 0 volcanic earthquake",2025-08-01 05:00,2025-08-01 16:48,phivolcs_dost,https://x.com/phivolcs_dost/status/1951025080131264578
-x_user,phivolcs_dost,#MayonVolcano,2025-08-01 05:07,2025-08-01 16:48,phivolcs_dost,https://x.com/phivolcs_dost/status/1951026941425012981
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeAurora
+Volcanic Earthquake: 0 volcanic earthquake",2025-08-01 05:00,2025-08-01 16:48,phivolcs_dost,https://x.com/phivolcs_dost/status/1951025080131264578,,,,,,,
+X,phivolcs_dost,#MayonVolcano,2025-08-01 05:07,2025-08-01 16:48,phivolcs_dost,https://x.com/phivolcs_dost/status/1951026941425012981,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeAurora
 Earthquake Information No.1
 Date and Time: 01 August 2025 - 08:42 AM
 Magnitude = 1.9
 Depth = 005 km
 Location = 15.46°N, 121.64°E - 028 km N 74° E of Dingalan (Aurora)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_0042_B1.html…",2025-08-01 08:54,2025-08-01 22:45,phivolcs_dost,https://x.com/phivolcs_dost/status/1951084036379779465
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelSur
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_0042_B1.html…",2025-08-01 08:54,2025-08-01 22:45,phivolcs_dost,https://x.com/phivolcs_dost/status/1951084036379779465,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelSur
 Earthquake Information No.1
 Date and Time: 01 August 2025 - 08:30 AM
 Magnitude = 2.0
 Depth = 010 km
 Location = 08.30°N, 127.26°E - 098 km N 73° E of Lingig (Surigao Del Sur)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_0030_B1F.html…",2025-08-01 08:36,2025-08-01 22:45,phivolcs_dost,https://x.com/phivolcs_dost/status/1951079625792299515
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelSur
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_0030_B1F.html…",2025-08-01 08:36,2025-08-01 22:45,phivolcs_dost,https://x.com/phivolcs_dost/status/1951079625792299515,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelSur
 Earthquake Information No.1
 Date and Time: 01 August 2025 - 08:15 AM
 Magnitude = 2.5
 Depth = 029 km
 Location = 08.26°N, 127.36°E - 108 km N 77° E of Lingig (Surigao Del Sur)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_0015_B1F.html…",2025-08-01 08:23,2025-08-01 22:45,phivolcs_dost,https://x.com/phivolcs_dost/status/1951076238807978152
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelSur
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_0015_B1F.html…",2025-08-01 08:23,2025-08-01 22:45,phivolcs_dost,https://x.com/phivolcs_dost/status/1951076238807978152,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelSur
 Earthquake Information No.1
 Date and Time: 01 August 2025 - 08:13 AM
 Magnitude = 2.4
 Depth = 014 km
 Location = 08.23°N, 127.34°E - 104 km N 78° E of Lingig (Surigao Del Sur)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_0013_B1F.html…",2025-08-01 08:20,2025-08-01 22:45,phivolcs_dost,https://x.com/phivolcs_dost/status/1951075445765820769
-x_user,NDRRMC_OpCen,"WEATHER UPDATE | As of 2:00 AM today, 01 August 2025. the Low Pressure Area (LPA 07j) OUTSIDE the Philippine Area of Responsibility (PAR) has still a ""HIGH"" chance of developing into a Tropical Depression within the next 24 hours.
-All are advised to monitor updates from",2025-08-01 07:12,2025-08-02 00:00,NDRRMC_OpCen,https://x.com/NDRRMC_OpCen/status/1951058475313930597
-x_user,NDRRMC_OpCen,"WEATHER UPDATE | As of 8:00 PM today, 31 July 2025. the Low Pressure Area (LPA 07j) OUTSIDE the Philippine Area of Responsibility (PAR) has a ""HIGH"" chance of developing into a Tropical Depression within the next 24 hours.
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_0013_B1F.html…",2025-08-01 08:20,2025-08-01 22:45,phivolcs_dost,https://x.com/phivolcs_dost/status/1951075445765820769,,,,,,,
+X,NDRRMC_OpCen,"WEATHER UPDATE | As of 8:00 PM today, 31 July 2025. the Low Pressure Area (LPA 07j) OUTSIDE the Philippine Area of Responsibility (PAR) has a ""HIGH"" chance of developing into a Tropical Depression within the next 24 hours.
 
-All are advised to monitor updates from DOST-PAGASA.",2025-08-01 00:27,2025-08-02 00:00,NDRRMC_OpCen,https://x.com/NDRRMC_OpCen/status/1950956483694510082
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeOccidentalMindoro
+All are advised to monitor updates from DOST-PAGASA.",2025-08-01 00:27,2025-08-02 00:00,NDRRMC_OpCen,https://x.com/NDRRMC_OpCen/status/1950956483694510082,,,,,,,
+X,NDRRMC_OpCen,"WEATHER UPDATE | As of 2:00 AM today, 01 August 2025. the Low Pressure Area (LPA 07j) OUTSIDE the Philippine Area of Responsibility (PAR) has still a ""HIGH"" chance of developing into a Tropical Depression within the next 24 hours.
+All are advised to monitor updates from",2025-08-01 07:12,2025-08-02 01:00,NDRRMC_OpCen,https://x.com/NDRRMC_OpCen/status/1951058475313930597,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeOccidentalMindoro
 Earthquake Information No.1
 Date and Time: 01 August 2025 - 11:52 AM
 Magnitude = 3.3
 Depth = 010 km
 Location = 13.55°N, 119.96°E - 036 km S 59° W of Looc (Occidental Mindoro)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_0352_B1.html…",2025-08-01 11:59,2025-08-02 00:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1951130522786341166
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeNorthernSamar
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_0352_B1.html…",2025-08-01 11:59,2025-08-02 01:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1951130522786341166,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeNorthernSamar
 Earthquake Information No.1
 Date and Time: 01 August 2025 - 11:20 AM
 Magnitude = 1.7
 Depth = 015 km
 Location = 12.55°N, 124.81°E - 007 km N 78° W of San Roque (Northern Samar)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_0320_B1.html…",2025-08-01 11:28,2025-08-02 00:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1951122906513305666
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeIlocosNorte
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_0320_B1.html…",2025-08-01 11:28,2025-08-02 01:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1951122906513305666,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeIlocosNorte
 Earthquake Information No.1
 Date and Time: 01 August 2025 - 11:08 AM
 Magnitude = 3.4
 Depth = 016 km
 Location = 18.12°N, 120.38°E - 016 km N 45° W of Currimao (Ilocos Norte)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_0308_B1.html…",2025-08-01 11:22,2025-08-02 00:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1951121365261783099
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelSur
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_0308_B1.html…",2025-08-01 11:22,2025-08-02 01:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1951121365261783099,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelSur
 Earthquake Information No.1
 Date and Time: 01 August 2025 - 10:25 AM
 Magnitude = 1.9
 Depth = 020 km
 Location = 08.43°N, 127.02°E - 075 km N 85° E of Hinatuan (Surigao Del Sur)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_0225_B1.html…",2025-08-01 10:33,2025-08-02 00:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1951108976999014606
-x_user,phivolcs_dost,"#EarthquakePH #EarthquakeBenguet
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_0225_B1.html…",2025-08-01 10:33,2025-08-02 01:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1951108976999014606,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeBenguet
 Earthquake Information No.1
 Date and Time: 01 August 2025 - 09:07 AM
 Magnitude = 1.4
 Depth = 033 km
 Location = 16.49°N, 120.86°E - 003 km S 88° E of Bokod (Benguet)
 
-https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_0107_B1.html…",2025-08-01 09:17,2025-08-02 00:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1951089926185033883
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_0107_B1.html…",2025-08-01 09:17,2025-08-02 01:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1951089926185033883,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeAgusanDelSur
+Earthquake Information No.1
+Date and Time: 01 August 2025 - 05:18 PM
+Magnitude = 2.9
+Depth = 049 km
+Location = 08.63°N, 125.65°E - 005 km S 03° E of Esperanza (Agusan Del Sur)
+
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_0918_B1.html…",2025-08-01 17:27,2025-08-02 03:05,phivolcs_dost,https://x.com/phivolcs_dost/status/1951213253759213691,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeCagayan
+Earthquake Information No.1
+Date and Time: 01 August 2025 - 04:01 PM
+Magnitude = 2.6
+Depth = 018 km
+Location = 18.04°N, 121.98°E - 020 km N 36° E of Baggao (Cagayan)
+
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_0801_B1.html…",2025-08-01 16:10,2025-08-02 03:05,phivolcs_dost,https://x.com/phivolcs_dost/status/1951193699649724687,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeOrientalMindoro
+Earthquake Information No.1
+Date and Time: 01 August 2025 - 03:10 PM
+Magnitude = 2.2
+Depth = 029 km
+Location = 13.18°N, 121.11°E - 018 km N 89° W of Victoria (Oriental Mindoro)
+
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_0710_B1.html…",2025-08-01 15:23,2025-08-02 03:05,phivolcs_dost,https://x.com/phivolcs_dost/status/1951181873553744221,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelSur
+Earthquake Information No.1
+Date and Time: 01 August 2025 - 02:21 PM
+Magnitude = 2.4
+Depth = 021 km
+Location = 08.94°N, 126.21°E - 008 km S 66° W of Bayabas (Surigao Del Sur)
+
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_0621_B1.html…",2025-08-01 14:30,2025-08-02 03:05,phivolcs_dost,https://x.com/phivolcs_dost/status/1951168714579329283,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeSurigaoDelSur
+Earthquake Information No.1
+Date and Time: 01 August 2025 - 02:01 PM
+Magnitude = 2.3
+Depth = 026 km
+Location = 08.59°N, 126.19°E - 010 km N 48° E of Barobo (Surigao Del Sur)
+
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_0601_B1.html…",2025-08-01 14:12,2025-08-02 03:05,phivolcs_dost,https://x.com/phivolcs_dost/status/1951164066678063119,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeAgusanDelSur
+Earthquake Information No.1
+Date and Time: 02 August 2025 - 03:55 AM
+Magnitude = 2.4
+Depth = 014 km
+Location = 08.07°N, 125.63°E - 028 km S 63° W of Loreto (Agusan Del Sur)
+
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_1955_B1.html…",2025-08-02 04:04,2025-08-02 11:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1951373526616908150,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeEasternSamar
+Earthquake Information No.1
+Date and Time: 02 August 2025 - 03:49 AM
+Magnitude = 2.3
+Depth = 027 km
+Location = 11.96°N, 125.60°E - 015 km S 57° E of Dolores (Eastern Samar)
+
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_1949_B1.html…",2025-08-02 03:56,2025-08-02 11:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1951371417758605589,,,,,,,
+X,phivolcs_dost,"#EarthquakePH #EarthquakeIlocosNorte
+Earthquake Information No.2
+Date and Time: 02 August 2025 - 03:35 AM
+Magnitude = 3.1
+Depth = 024 km
+Location = 18.14°N, 120.96°E - 015 km East of Carasi (Ilocos Norte)
+
+https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0801_1935_B2.html…",2025-08-02 03:54,2025-08-02 11:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1951371040648761361,,,,,,,
+X,phivolcs_dost,"BULKANG KANLAON
+Buod ng 24 oras na pagmamanman
+02 Agosto 2025 alas-12 ng umaga 
+
+#KanlaonVolcano
+
+Filipino: 
+https://phivolcs.dost.gov.ph/volcano-hazard/volcano-bulletin2/kanlaon-volcano/32580-bulkang-kanlaon-buod-ng-24-oras-na-pagmamanman-02-agosto-2025-alas-12-ng-umaga…
+
+English: 
+https://phivolcs.dost.gov.ph/volcano-hazard/volcano-bulletin2/kanlaon-volcano/32581-kanlaon-volcano-summary-of-24hr-observation-02-august-2025-12-00-am…",2025-08-02 05:00,2025-08-02 15:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1951387465505264062,,,,,,,
+X,phivolcs_dost,#KanlaonVolcano,2025-08-02 05:05,2025-08-02 15:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1951388884182741083,,,,,,,
+X,phivolcs_dost,"BULKANG TAAL
+Buod ng 24 oras na pagmamanman
+02 Agosto 2025 alas-12 ng umaga 
+
+#TaalVolcano
+
+Filipino: 
+https://phivolcs.dost.gov.ph/volcano-hazard/volcano-bulletin2/taal-volcano/32584-bulkang-taal-buod-ng-24-oras-na-pagmamanman-02-agosto-2025-alas-12-ng-umaga…
+
+English: 
+https://phivolcs.dost.gov.ph/volcano-hazard/volcano-bulletin2/taal-volcano/32585-taal-volcano-summary-of-24hr-observation-02-august-2025-12-00-am…",2025-08-02 05:00,2025-08-02 15:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1951387467581378600,,,,,,,
+X,phivolcs_dost,#TaalVolcano,2025-08-02 05:05,2025-08-02 15:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1951388780306608222,,,,,,,
+,,,,,,,x_user,phivolcs_dost,#KanlaonVolcano,2025-08-02 05:05,2025-08-02 17:40,phivolcs_dost,https://x.com/phivolcs_dost/status/1951388884182741083
