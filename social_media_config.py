@@ -8,7 +8,7 @@ FACEBOOK = {
         "mrpsd.com.ph", "NDRRMC", "pagasa.dost.gov.ph",
         "PhilstarNews", "PHIVOLCS", "PIAgovernment",
         "rapplerdotcom", "sunstardavaonews", "sunstarphilippines",
-        "UNTVNewsRescue", "weather.davao"
+        "stormchasersPH", "UNTVNewsRescue", "weather.davao"
     ],
 
     "search_queries": [
