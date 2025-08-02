@@ -51,7 +51,7 @@ KEYWORDS = [
 
     # Rain / Weather
     "rain", "raining", "rainfall",
-    "heavy rain", "monsoon",
+    "heavy rain", "heavy rainshowers", "monsoon",
     "LPA", "low pressure area",
     "malakas na ulan",
     

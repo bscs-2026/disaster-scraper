@@ -126,8 +126,10 @@ def save_results(df: pd.DataFrame):
                      .drop_duplicates(subset=['text'], keep='last')
     else:
         df_fb = df.copy()
+        
     df_fb.to_csv(FB_OUT, index=False)
-    logging.info(f"✅ FB raw rows saved: {len(df_fb)}")
+    logging.info(f"✅ New fb rows saved: {len(df)}")
+    logging.info(f"✅ FB Total: {len(df_fb)}")
 
     # Merged file
     if os.path.exists(MERGED_OUT):
@@ -136,8 +138,9 @@ def save_results(df: pd.DataFrame):
                        .drop_duplicates(subset=['text'], keep='last')
     else:
         df_merge = df.copy()
+        
     df_merge.to_csv(MERGED_OUT, index=False)
-    logging.info(f"✅ Merged rows saved: {len(df_merge)}")
+    logging.info(f"✅ All Total: {len(df_merge)}")
 
 def main():
     # configure logging
@@ -146,7 +149,7 @@ def main():
     # compute time thresholds
     now_ph             = datetime.now(PH_TIME)
     since_time_page    = now_ph - timedelta(hours=24)
-    since_time_hashtag = now_ph - timedelta(hours=48)
+    since_time_hashtag = now_ph - timedelta(hours=720)
     scraped_timestamp  = now_ph.strftime('%Y-%m-%d %H:%M')
 
     FB_PAGES   = FACEBOOK["users"]

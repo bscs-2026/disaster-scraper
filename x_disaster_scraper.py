@@ -44,7 +44,6 @@ def format_ts(dt: datetime) -> str:
     return dt.strftime('%Y-%m-%d %H:%M')
 
 def process_x_cards(results: list,
-                    source_label: str,
                     identifier: str,
                     cards,
                     cutoff_dt: datetime) -> None:
@@ -69,27 +68,27 @@ def process_x_cards(results: list,
         if post_dt < cutoff_dt:
             continue
 
-        # extract URL and user handle
+        # extract URL and username
         try:
             link = c.find_element(
                 By.XPATH, ".//a[contains(@href,'/status/')]"
             ).get_attribute("href")
-            handle = link.split("/")[3]
+            username = link.split("/")[3]
         except:
-            link, handle = None, "unknown"
+            link, username = None, "unknown"
 
         results.append({
-            "Source":            source_label,
-            "Query/Page":        identifier,
-            "Text":              txt[:5000],
-            "Post Timestamp":    format_ts(post_dt),
-            "Scraped Timestamp": scraped_at,
-            "User":              handle,
-            "Post URL":          link
+            "source":           'X',
+            "query_page":        identifier,
+            "text":              txt[:5000],
+            "post_timestamp":    format_ts(post_dt),
+            "scraped_timestamp": scraped_at,
+            "user":              username,
+            "post_url":          link
         })
         added += 1
 
-    logging.info(f"[{source_label}] {identifier}: appended {added} posts "
+    logging.info(f"[X] {identifier}: appended {added} posts "
                  f"(total cards processed: {len(cards)})")
 
 def save_results(df: pd.DataFrame):
@@ -99,21 +98,24 @@ def save_results(df: pd.DataFrame):
     if os.path.exists(X_OUT):
         old_x = pd.read_csv(X_OUT)
         df_x  = pd.concat([old_x, df], ignore_index=True) \
-                    .drop_duplicates(subset=['Text'], keep='last')
+                     .drop_duplicates(subset=['text'], keep='last')
     else:
         df_x = df.copy()
-    df_x.to_csv(X_OUT, index=False)
-    logging.info(f"✅ X raw rows saved: {len(df_x)}")
 
-    # 2) Merged file
+    df_x.to_csv(X_OUT, index=False)
+    logging.info(f"✅ New x rows saved: {len(df)}")
+    logging.info(f"✅ X Total: {len(df_x)}")
+
+    # 2) merged file 
     if os.path.exists(MERGED_OUT):
-        old_m     = pd.read_csv(MERGED_OUT)
-        df_merged = pd.concat([old_m, df], ignore_index=True) \
-                        .drop_duplicates(subset=['Text'], keep='last')
+        old_merge = pd.read_csv(MERGED_OUT)
+        df_merge  = pd.concat([old_merge, df], ignore_index=True) \
+                       .drop_duplicates(subset=['text'], keep='last')
     else:
-        df_merged = df.copy()
-    df_merged.to_csv(MERGED_OUT, index=False)
-    logging.info(f"✅ Merged rows saved: {len(df_merged)}")
+        df_merge = df.copy()
+
+    df_merge.to_csv(MERGED_OUT, index=False)
+    logging.info(f"✅ All Total: {len(df_merge)}")
 
 def main():
     # configure logging
@@ -122,7 +124,7 @@ def main():
     # timestamps
     now_ph       = datetime.now(PH_TIME)
     since_user   = now_ph - timedelta(hours=24)
-    since_search = now_ph - timedelta(hours=48)
+    since_search = now_ph - timedelta(hours=720)
     global scraped_at
     scraped_at   = now_ph.strftime('%Y-%m-%d %H:%M')
 
@@ -141,7 +143,7 @@ def main():
         time.sleep(3)
         scroll_page(driver)
         cards = driver.find_elements(By.XPATH, "//article[@role='article']")
-        process_x_cards(results, "x_user", user, cards, since_user)
+        process_x_cards(results, user, cards, since_user)
 
     # scrape each search query
     for query in queries:
@@ -151,7 +153,7 @@ def main():
         time.sleep(3)
         scroll_page(driver)
         cards = driver.find_elements(By.XPATH, "//article[@role='article']")
-        process_x_cards(results, "x_search", query, cards, since_search)
+        process_x_cards(results, query, cards, since_search)
 
     driver.quit()
 
