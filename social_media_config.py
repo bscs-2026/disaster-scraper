@@ -47,7 +47,7 @@ KEYWORDS = [
     "super typhoon", "tropical cyclone",   
     "bagyo", "unos", "thunderstorm", "lightning",
     "malakas na bagyo", "malakas na hangin", 
-    "#typhoon", "#storm" 
+    "#typhoon", "#storm", 
 
     # Rain / Weather
     "rain", "raining", "rainfall",
@@ -84,7 +84,7 @@ KEYWORDS = [
     # Volcano
     "volcano", "volcanic", "eruption", "ashfall", "lava",
     "bulkan", "pagputok ng bulkan",  
-    "#volcano", "Taal", "Mayon", "Pinatubo", "Kanlaon", "Balusan"
+    "#volcano", "Taal", "Mayon", "Pinatubo", "Kanlaon", "Balusan",
 
     # General disaster / emergency
     "disaster", "emergency", "rescue", "relief",
