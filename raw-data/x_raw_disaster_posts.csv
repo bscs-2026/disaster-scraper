@@ -668,7 +668,6 @@ Volcano: Kanlaon
 Alert Level: 2
 Status Alert Level: Pagtaas ng aktibidad 
 Volcanic Earthquake: 6 volcanic",2025-08-03 05:00,2025-08-03 14:40,phivolcs_dost,https://x.com/phivolcs_dost/status/1951749850694873135
-X,phivolcs_dost,#KanlaonVolcano,2025-08-03 05:10,2025-08-03 14:40,phivolcs_dost,https://x.com/phivolcs_dost/status/1951752454015779221
 X,phivolcs_dost,"BULKANG MAYON
 Buod ng 24 oras na pagmamanman
 03 Agosto 2025 alas-12 ng umaga 
@@ -685,7 +684,6 @@ Volcano: Mayon
 Alert Level: 1
 Status Alert Level: Bahagyang aktibidad 
 Volcanic Earthquake: 2 volcanic earthquakes",2025-08-03 05:00,2025-08-03 14:40,phivolcs_dost,https://x.com/phivolcs_dost/status/1951749849839239269
-X,phivolcs_dost,#MayonVolcano,2025-08-03 05:02,2025-08-03 14:40,phivolcs_dost,https://x.com/phivolcs_dost/status/1951750560434225539
 X,phivolcs_dost,"BULKANG TAAL
 Buod ng 24 oras na pagmamanman
 03 Agosto 2025 alas-12 ng umaga 
@@ -941,3 +939,27 @@ Depth = 003 km
 Location = 11.52°N, 125.26°E - 022 km S 62° W of City Of Borongan (Eastern Samar)
 
 https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/August/2025_0803_1913_B1.html…",2025-08-04 03:21,2025-08-04 10:00,phivolcs_dost,https://x.com/phivolcs_dost/status/1952087450333131111
+X,phivolcs_dost,"BULKANG MAYON
+Buod ng 24 oras na pagmamanman
+04 Agosto 2025 alas-12 ng umaga 
+
+#MayonVolcano
+
+Filipino: 
+https://phivolcs.dost.gov.ph/volcano-hazard/volcano-bulletin2/mayon-volcano/32598-bulkang-mayon-buod-ng-24-oras-na-pagmamanman-04-agosto-2025-alas-12-ng-umaga…
+
+English: 
+https://phivolcs.dost.gov.ph/volcano-hazard/volcano-bulletin2/mayon-volcano/32599-mayon-volcano-summary-of-24hr-observation-04-august-2025-12-00-am…",2025-08-04 04:58,2025-08-04 13:40,phivolcs_dost,https://x.com/phivolcs_dost/status/1952111733088067738
+X,phivolcs_dost,#MayonVolcano,2025-08-04 05:03,2025-08-04 13:40,phivolcs_dost,https://x.com/phivolcs_dost/status/1952113159046840429
+X,phivolcs_dost,"BULKANG KANLAON
+Buod ng 24 oras na pagmamanman
+04 Agosto 2025 alas-12 ng umaga 
+
+#KanlaonVolcano
+
+Filipino: 
+https://phivolcs.dost.gov.ph/volcano-hazard/volcano-bulletin2/kanlaon-volcano/32596-bulkang-kanlaon-buod-ng-24-oras-na-pagmamanman-04-agosto-2025-alas-12-ng-umaga…
+
+English: 
+https://phivolcs.dost.gov.ph/volcano-hazard/volcano-bulletin2/kanlaon-volcano/32597-kanlaon-volcano-summary-of-24hr-observation-04-august-2025-12-00-am…",2025-08-04 04:58,2025-08-04 13:40,phivolcs_dost,https://x.com/phivolcs_dost/status/1952111733549781153
+X,phivolcs_dost,#KanlaonVolcano,2025-08-04 05:03,2025-08-04 13:40,phivolcs_dost,https://x.com/phivolcs_dost/status/1952112995028611327
