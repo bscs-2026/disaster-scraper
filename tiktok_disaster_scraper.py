@@ -141,7 +141,7 @@ driver.quit()
 
 # — save to CSV (dedupe by Text) —
 df = pd.DataFrame(results)
-out = "raw-data/tiktok_search_disaster_posts.csv"
+out = "data/raw-data/tiktok_search_disaster_posts.csv"
 os.makedirs(os.path.dirname(out), exist_ok=True)
 
 if os.path.exists(out):

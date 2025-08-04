@@ -14,8 +14,8 @@ from social_media_config import KEYWORDS, X
 
 # Constants
 PH_TIME        = timezone(timedelta(hours=8))
-X_OUT          = 'raw-data/x_raw_disaster_posts.csv'
-MERGED_OUT     = 'raw-data/merged_raw_disaster_posts.csv'
+X_OUT          = 'data/raw-data/x_raw_disaster_posts.csv'
+MERGED_OUT     = 'data/raw-data/merged_raw_disaster_posts.csv'
 LOG_FORMAT     = '%(asctime)s [%(levelname)s] %(message)s'
 
 def init_driver() -> webdriver.Chrome:
