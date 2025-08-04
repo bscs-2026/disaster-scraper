@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-import os, time, logging
+import os
+import time
+import logging
 from datetime import datetime, timedelta, timezone
 from urllib.parse import quote_plus
 
@@ -10,30 +12,25 @@ from selenium.webdriver.chrome.options import Options
 import pandas as pd
 from social_media_config import KEYWORDS, X
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
+# Constants
+PH_TIME        = timezone(timedelta(hours=8))
+X_OUT          = 'raw-data/x_raw_disaster_posts.csv'
+MERGED_OUT     = 'raw-data/merged_raw_disaster_posts.csv'
+LOG_FORMAT     = '%(asctime)s [%(levelname)s] %(message)s'
 
-PH_TIME            = timezone(timedelta(hours=8))
-now_ph             = datetime.now(PH_TIME)
-since_user   = now_ph - timedelta(hours=24)
-since_search = now_ph - timedelta(hours=48)
-scraped_at   = now_ph.strftime('%Y-%m-%d %H:%M')
+def init_driver() -> webdriver.Chrome:
+    opts = Options()
+    opts.add_argument("--headless=new")
+    opts.add_argument("--disable-gpu")
+    opts.add_argument("--disable-notifications")
+    opts.add_argument("--window-size=1920,1080")
+    opts.add_argument(
+        "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+    )
+    return webdriver.Chrome(options=opts)
 
-X_USERS        = X["users"]
-X_SEARCH_QUERIES = X["search_queries"]
-
-# Chrome Driver Setup 
-opts = Options()
-opts.add_argument("--headless=new")
-opts.add_argument("--disable-gpu")
-opts.add_argument("--disable-notifications")
-opts.add_argument("--window-size=1920,1080")
-opts.add_argument(
-    "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
-)
-driver = webdriver.Chrome(options=opts)
-
-def scroll_page(scroll_times=60, pause=1):
+def scroll_page(driver, scroll_times=60, pause=1):
     last = driver.execute_script("return document.body.scrollHeight")
     for _ in range(scroll_times):
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
@@ -43,87 +40,126 @@ def scroll_page(scroll_times=60, pause=1):
             break
         last = nxt
 
-def format_ts(dt):
+def format_ts(dt: datetime) -> str:
     return dt.strftime('%Y-%m-%d %H:%M')
 
-results = []
-
-def process_twitter_cards(source: str,
-                          identifier: str,
-                          cards,
-                          cutoff_dt: datetime) -> None:
+def process_x_cards(results: list,
+                    identifier: str,
+                    cards,
+                    cutoff_dt: datetime) -> None:
     added = 0
     for c in cards:
-        # Text
+        # extract text
         try:
             txt = c.find_element(By.XPATH, ".//div[@data-testid='tweetText']").text
-        except Exception:
+        except:
             continue
         if not any(kw in txt.lower() for kw in KEYWORDS):
             continue
 
-        # Timestamp
+        # extract and convert timestamp
         try:
-            iso = c.find_element(By.TAG_NAME, "time").get_attribute("datetime")
-            dt0 = datetime.fromisoformat(iso.replace("Z", "+00:00"))  # ISO → UTC
+            iso = c.find_element(By.TAG_NAME, "time") \
+                   .get_attribute("datetime")
+            dt0 = datetime.fromisoformat(iso.replace("Z", "+00:00"))
             post_dt = dt0.astimezone(PH_TIME)
-        except Exception:
+        except:
             continue
         if post_dt < cutoff_dt:
             continue
 
-        # URL & username
+        # extract URL and username
         try:
-            link = c.find_element(By.XPATH,
-                                  ".//a[contains(@href,'/status/')]").get_attribute("href")
-            handle = link.split("/")[3]
-        except Exception:
-            link, handle = None, "unknown"
+            link = c.find_element(
+                By.XPATH, ".//a[contains(@href,'/status/')]"
+            ).get_attribute("href")
+            username = link.split("/")[3]
+        except:
+            link, username = None, "unknown"
 
-        # Save
         results.append({
-            "Source":            source,
-            "Query/Page":        identifier,
-            "Text":              txt[:5000],
-            "Post Timestamp":    format_ts(post_dt),
-            "Scraped Timestamp": scraped_at,
-            "User":              handle,
-            "Post URL":          link
+            "source":           'X',
+            "query_page":        identifier,
+            "text":              txt[:5000],
+            "post_timestamp":    format_ts(post_dt),
+            "scraped_timestamp": scraped_at,
+            "user":              username,
+            "post_url":          link
         })
         added += 1
-    logging.info(f"[{source}] {identifier}: appended {added} posts "
-                 f"(total collected: {len(results)})")
 
-for user in X_USERS:
-    url = f"https://x.com/{user}"
-    logging.info(f"[x_user] Visiting {url}")
-    driver.get(url)
-    time.sleep(3)
-    scroll_page()
-    cards = driver.find_elements(By.XPATH, "//article[@role='article']")
-    process_twitter_cards("x_user", user, cards, since_user)
+    logging.info(f"[X] {identifier}: appended {added} posts "
+                 f"(total cards processed: {len(cards)})")
 
-for query in X_SEARCH_QUERIES:
-    url = f"https://x.com/search?q={quote_plus(query)}&src=typed_query&f=live"
-    logging.info(f"[x_search] Visiting {url}")
-    driver.get(url)
-    time.sleep(3)
-    scroll_page()
-    cards = driver.find_elements(By.XPATH, "//article[@role='article']")
-    process_twitter_cards("x_search", query, cards, since_search)
+def save_results(df: pd.DataFrame):
+    os.makedirs(os.path.dirname(X_OUT), exist_ok=True)
 
-driver.quit()
+    # 1) X-only file
+    if os.path.exists(X_OUT):
+        old_x = pd.read_csv(X_OUT)
+        df_x  = pd.concat([old_x, df], ignore_index=True) \
+                     .drop_duplicates(subset=['text'], keep='last')
+    else:
+        df_x = df.copy()
 
-# Save results to CSV
+    df_x.to_csv(X_OUT, index=False)
+    logging.info(f"✅ New x rows saved: {len(df)}")
+    logging.info(f"✅ X Total: {len(df_x)}")
 
-df = pd.DataFrame(results)
-out = "raw-data/x_raw_disaster_posts.csv"
-os.makedirs(os.path.dirname(out), exist_ok=True)
+    # 2) merged file 
+    if os.path.exists(MERGED_OUT):
+        old_merge = pd.read_csv(MERGED_OUT)
+        df_merge  = pd.concat([old_merge, df], ignore_index=True) \
+                       .drop_duplicates(subset=['text'], keep='last')
+    else:
+        df_merge = df.copy()
 
-if os.path.exists(out):
-    old = pd.read_csv(out)
-    df  = pd.concat([old, df], ignore_index=True) \
-           .drop_duplicates(subset=["Text"], keep="last")
+    df_merge.to_csv(MERGED_OUT, index=False)
+    logging.info(f"✅ All Total: {len(df_merge)}")
 
-df.to_csv(out, index=False)
-logging.info(f"✅ Done! total rows: {len(df)}")
+def main():
+    # configure logging
+    logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
+
+    # timestamps
+    now_ph       = datetime.now(PH_TIME)
+    since_user   = now_ph - timedelta(hours=24)
+    since_search = now_ph - timedelta(hours=720)
+    global scraped_at
+    scraped_at   = now_ph.strftime('%Y-%m-%d %H:%M')
+
+    # load config
+    users   = X["users"]
+    queries = X["search_queries"]
+
+    driver  = init_driver()
+    results = []
+
+    # scrape each user timeline
+    for user in users:
+        url = f"https://x.com/{user}"
+        logging.info(f"[x_user] Visiting {url}")
+        driver.get(url)
+        time.sleep(3)
+        scroll_page(driver)
+        cards = driver.find_elements(By.XPATH, "//article[@role='article']")
+        process_x_cards(results, user, cards, since_user)
+
+    # scrape each search query
+    for query in queries:
+        url = f"https://x.com/search?q={quote_plus(query)}&src=typed_query&f=live"
+        logging.info(f"[x_search] Visiting {url}")
+        driver.get(url)
+        time.sleep(3)
+        scroll_page(driver)
+        cards = driver.find_elements(By.XPATH, "//article[@role='article']")
+        process_x_cards(results, query, cards, since_search)
+
+    driver.quit()
+
+    # save to CSV
+    df = pd.DataFrame(results)
+    save_results(df)
+
+if __name__ == "__main__":
+    main()

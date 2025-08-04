@@ -2,13 +2,13 @@
 FACEBOOK = {
     "users": [
         "abscbnNEWS", "BFPRHQ11", "civildefensedavao", "davaocitydrmmc", 
-        "DavaoDRRMO", "davaocitydisasterradio",
+        "DavaoDRRMO", "davaocitydisasterradio", "DZMMTeleradyo.MSPC"
         "gmanews", "inquirerdotnet", 
         "manilabulletin", "mprsdcdo", "mindanews"
         "mrpsd.com.ph", "NDRRMC", "pagasa.dost.gov.ph",
         "PhilstarNews", "PHIVOLCS", "PIAgovernment",
         "rapplerdotcom", "sunstardavaonews", "sunstarphilippines",
-        "UNTVNewsRescue", "weather.davao"
+        "stormchasersPH", "UNTVNewsRescue", "weather.davao"
     ],
 
     "search_queries": [
@@ -51,7 +51,7 @@ KEYWORDS = [
 
     # Rain / Weather
     "rain", "raining", "rainfall",
-    "heavy rain", "monsoon",
+    "heavy rain", "heavy rainshowers", "monsoon",
     "LPA", "low pressure area",
     "malakas na ulan",
     
@@ -84,11 +84,12 @@ KEYWORDS = [
     # Volcano
     "volcano", "volcanic", "eruption", "ashfall", "lava",
     "bulkan", "pagputok ng bulkan",  
-    "#volcano",
+    "#volcano", "Taal", "Mayon", "Pinatubo", "Kanlaon", "Balusan"
 
     # General disaster / emergency
     "disaster", "emergency", "rescue", "relief",
     "evacuate", "evacuation", "evacuated", "#evacuation",
+    "disaster response", "disaster relief",
 
     # Warnings & Alerts
     "warning", "alert", "advisory", "bulletin",
