@@ -10,8 +10,8 @@ from data_preprocessing.extract_datetime import extract_datetime
 from data_preprocessing.extract_pagesource import extract_pagesource
 from data_preprocessing.format_columns import format_columns
 
-INPUT_PATH = "disaster-scraper/data/raw-data/merged_raw_disaster_posts.csv"
-OUTPUT_PATH = "disaster-scraper/data/cleaned-data/cleaned_disaster_posts.csv"
+INPUT_PATH = "data/raw-data/merged_raw_disaster_posts.csv"
+OUTPUT_PATH = "data/cleaned-data/cleaned_disaster_posts.csv"
 
 os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
 
