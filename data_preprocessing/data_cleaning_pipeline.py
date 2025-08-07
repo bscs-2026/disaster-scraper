@@ -7,6 +7,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from data_preprocessing.clean_text import clean_text
 from data_preprocessing.extract_datetime import extract_datetime
+from data_preprocessing.extract_pagesource import extract_pagesource
 from data_preprocessing.format_columns import format_columns
 
 INPUT_PATH = "disaster-scraper/data/raw-data/merged_raw_disaster_posts.csv"
@@ -34,9 +35,8 @@ df = df[df["text_content"].str.strip() != ""]
 # print("⏱️ Extracting date-time from text...")
 # df["extracted_date_time"] = df["text_content"].apply(extract_datetime)
 
-
-# Extract poster name from URL like "https://www.facebook.com/SunstarDavao/"
-df["page_source"] = df["post_url"].str.extract(r"(?:facebook\.com|x\.com)/([^/?\s]+)", expand=False)
+print("🔍 Extracting page source...")
+df["page_source"] = df["post_url"].apply(extract_pagesource)
 
 print("📊 Formatting columns...")
 df = format_columns(df)
