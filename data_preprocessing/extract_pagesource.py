@@ -25,10 +25,15 @@ def extract_pagesource(url):
     if not isinstance(url, str):
         return np.nan
 
-    # Extract raw username/page name
+    # 1. If URL points to a hashtag
+    hashtag_match = re.search(r"(?:facebook\.com|x\.com)/hashtag/([^/?#\s]+)", url)
+    if hashtag_match:
+        return f"#{hashtag_match.group(1).lower()}"
+
+    # 2. Otherwise extract the page name/username
     match = re.search(r"(?:facebook\.com|x\.com)/(?!hashtag|watch|reel)([^/?#\s]+)", url)
     if match:
         raw_page = match.group(1).lower().strip().strip(".@/")
-        # Map to standard name if available
         return SOURCE_NAME_MAP.get(raw_page, raw_page)
+
     return np.nan

@@ -27,7 +27,7 @@ def clean_text(text):
     text = text.encode("ascii", "ignore").decode("ascii")      # Remove emojis and non-ASCII
     text = re.sub(r"&\w+;", "", text)                          # Remove HTML entities like &amp;
     # text = re.sub(r"[^\w\s:/]", "", text)                    # Preserve : / for date/time
-    text = re.sub(r"[^\w\s]", "", text)                        # Keeps only alphanumeric + whitespace
+    text = re.sub(r"[^\w\s]", " ", text)                        # Keeps only alphanumeric + whitespace
     text = re.sub(r"\s+", " ", text).strip()                   # Remove excess whitespace
 
     # Skip if only punctuation or too short
