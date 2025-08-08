@@ -5,7 +5,8 @@ def format_columns(df):
         "date-time": "date-time",
         "post_url": "url"
     })[
-        ["source", "date-time", "text_content", "url"]
+        ["source", "page_source", "date-time", "text_content", "url"]
         # ["source", "page_source", "text_content", "url"]
 
     ]
+    
