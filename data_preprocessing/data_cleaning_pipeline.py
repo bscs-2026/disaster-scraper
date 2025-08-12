@@ -6,13 +6,14 @@ import pandas as pd
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from data_preprocessing.clean_text import clean_text
-from data_preprocessing.extract_datetime import extract_datetime
+from data_preprocessing.extract_datetime import extract_datetime_string, parse_datetime
 from data_preprocessing.extract_pagesource import extract_pagesource
 from data_preprocessing.format_columns import format_columns
+from data_preprocessing.drop_near_duplicates import drop_near_duplicates
+from dateutil import parser
 
 INPUT_PATH = "data/raw-data/merged_raw_disaster_posts.csv"
 OUTPUT_PATH = "data/cleaned-data/cleaned_disaster_posts.csv"
-
 os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
 
 from dateutil import parser
@@ -24,16 +25,24 @@ def parse_datetime_safe(x):
         return pd.NaT
 
 print("📥 Loading raw data...")
-
 df = pd.read_csv(INPUT_PATH)
 
 print("🧹 Cleaning text...")
-df["text_content"] = df["text"].apply(clean_text)
-df = df[df["text_content"].str.strip() != ""]
+df["text_content"] = df["text"].fillna("").apply(clean_text)
 
-# *** will find way to extract it better later kasi medyo crazy siya ***
-# print("⏱️ Extracting date-time from text...")
-# df["extracted_date_time"] = df["text_content"].apply(extract_datetime)
+# Drop rows where cleaned text is empty after stripping
+df = df[df["text_content"].str.strip().astype(bool)]
+
+print("🧽 Removing exact duplicate posts...")
+df = df.drop_duplicates(subset=["text_content"], keep="first")
+
+print("🤏 Removing near-duplicate posts...")
+df = drop_near_duplicates(df, threshold=90)
+
+
+print("⏱️ Extracting date-time from text...")
+df["extracted_date_time"] = df["text_content"].apply(extract_datetime_string)
+df["date-time"] = df.apply(parse_datetime, axis=1)
 
 print("🔍 Extracting page source...")
 df["page_source"] = df["post_url"].apply(extract_pagesource)
