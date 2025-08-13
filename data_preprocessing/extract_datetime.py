@@ -2,6 +2,7 @@ import re
 import pandas as pd
 from dateutil import parser
 from datetime import datetime
+from dateutil.tz import gettz
 
 TAGALOG_TO_ENGLISH_MONTHS = {
     "enero": "january", "pebrero": "february", "marso": "march", "abril": "april",
@@ -9,8 +10,8 @@ TAGALOG_TO_ENGLISH_MONTHS = {
     "setyembre": "september", "oktubre": "october", "nobyembre": "november", "disyembre": "december"
 }
 
+PH_TZ = gettz("Asia/Manila")
 CURRENT_YEAR = datetime.now().year
-
 
 def translate_tagalog_months(text):
     for tgl, eng in TAGALOG_TO_ENGLISH_MONTHS.items():
@@ -60,8 +61,10 @@ def parse_datetime(row):
     if ts and ts.lower() != "nan":
         try:
             parsed = parser.parse(ts, fuzzy=True)
+            if parsed.tzinfo is None:
+                parsed = parsed.replace(tzinfo=PH_TZ)
             if 2000 <= parsed.year <= CURRENT_YEAR:
-                return parsed
+                return parsed.strftime('%Y-%m-%d %H:%M')
         except:
             pass
 
@@ -70,9 +73,12 @@ def parse_datetime(row):
         for piece in extracted.split(";"):
             try:
                 parsed = parser.parse(piece.strip(), fuzzy=True)
+                if parsed.tzinfo is None:
+                    parsed = parsed.replace(tzinfo=PH_TZ)
                 if 2000 <= parsed.year <= CURRENT_YEAR:
-                    return parsed
+                    return parsed.strftime('%Y-%m-%d %H:%M')
             except:
                 continue
 
-    return pd.NaT
+    # Fallback: return NOW_PH in same format
+    return datetime.now(tz=PH_TZ).strftime('%Y-%m-%d %H:%M')
