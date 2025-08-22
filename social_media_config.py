@@ -1,7 +1,7 @@
 # Facebook user and search query scraper configuration
 FACEBOOK = {
     "users": [
-        "abscbnNEWS", "BFPRHQ11", "civildefensedavao", "davaocitydrmmc", 
+        "abscbnNEWS","atenews","BFPRHQ11", "civildefensedavao", "davaocitydrmmc", 
         "DavaoDRRMO", "davaocitydisasterradio", "DZMMTeleradyo.MSPC"
         "gmanews", "inquirerdotnet", 
         "manilabulletin", "mprsdcdo", "mindanews"
