@@ -79,6 +79,16 @@ def parse_datetime(row):
                     return parsed.strftime('%Y-%m-%d %H:%M')
             except:
                 continue
+            
+    scraped = row.get("scraped_timestamp", "")
+    if scraped:
+        try:
+            parsed = parser.parse(scraped, fuzzy=True)
+            if parsed.tzinfo is None:
+                parsed = parsed.replace(tzinfo=PH_TZ)
+            return parsed.strftime('%Y-%m-%d %H:%M')
+        except:
+            pass
 
     # Fallback: return NOW_PH in same format
     return datetime.now(tz=PH_TZ).strftime('%Y-%m-%d %H:%M')
