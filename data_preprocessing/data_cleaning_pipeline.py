@@ -10,6 +10,7 @@ from data_preprocessing.extract_datetime import extract_datetime_string, parse_d
 from data_preprocessing.extract_pagesource import extract_pagesource
 from data_preprocessing.format_columns import format_columns
 from data_preprocessing.drop_near_duplicates import drop_near_duplicates
+from data_preprocessing.location_filter import mentions_ph_location
 from dateutil import parser
 
 INPUT_PATH = "data/raw-data/merged_raw_disaster_posts.csv"
@@ -39,6 +40,8 @@ df = df.drop_duplicates(subset=["text_content"], keep="first")
 print("🤏 Removing near-duplicate posts...")
 df = drop_near_duplicates(df, threshold=90)
 
+print("🌏 Filtering non-Philippine context posts...")
+df = df[df["text_content"].apply(mentions_ph_location)]
 
 print("⏱️ Extracting date-time from text...")
 df["extracted_date_time"] = df["text_content"].apply(extract_datetime_string)
@@ -49,6 +52,9 @@ df["page_source"] = df["post_url"].apply(extract_pagesource)
 
 print("📊 Formatting columns...")
 df = format_columns(df)
+
+print("📌 Sorting by date-time (newest first)...")
+df = df.sort_values(by="date-time", ascending=False)
 
 df.to_csv(OUTPUT_PATH, index=False)
 print("✅ Done! Cleaned data saved to:", OUTPUT_PATH)
