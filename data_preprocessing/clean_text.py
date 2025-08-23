@@ -31,7 +31,7 @@ def clean_text(text):
     text = re.sub(r"\s+", " ", text).strip()                   # Remove excess whitespace
 
     # Skip if only punctuation or too short
-    if len(text) < 70 or re.fullmatch(r"[. ]+", text):
+    if len(text) < 90 or re.fullmatch(r"[. ]+", text):
         return ""
     
     # Skip if text is mostly numeric or looks like a garbage timestamp
