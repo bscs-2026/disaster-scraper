@@ -42,9 +42,6 @@ df["page_source"] = df["post_url"].apply(extract_pagesource)
 print("📊 Formatting columns...")
 df = format_columns(df)
 
-print("📌 Sorting by date-time (newest first)...")
-df = df.sort_values(by="date-time", ascending=False)
-
 df.to_csv(OUTPUT_PATH, index=False)
 print("✅ Done! Cleaned data saved to:", OUTPUT_PATH)
 
