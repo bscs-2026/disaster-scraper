@@ -6,8 +6,6 @@ import unicodedata as ud
 OUTPUT_DIR = 'data/cleaned-data'
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-df = pd.read_csv('data/raw-data/merged_raw_disaster_posts.csv')
-
 def normalize_fonted_unicode(text):
     return ''.join(
         c for c in ud.normalize('NFKD', text)

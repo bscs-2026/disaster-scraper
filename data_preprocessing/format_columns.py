@@ -1,12 +1,17 @@
 def format_columns(df):
     return df.rename(columns={
         "text": "raw_text",
-        "text_content": "text_content",
-        "date-time": "date-time",
+        "event_time_primary": "datetime",
+        "location_matched_json": "location",
         "post_url": "url"
     })[
-        ["source", "page_source", "date-time", "text_content", "url"]
-        # ["source", "page_source", "text_content", "url"]
+        [
+            "source",
+            "page_source",
+            "text_content",
+            "datetime",
+            "location",
+            "url",
 
+        ]
     ]
-    
