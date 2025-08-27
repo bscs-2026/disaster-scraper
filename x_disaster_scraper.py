@@ -12,6 +12,22 @@ from selenium.webdriver.chrome.options import Options
 import pandas as pd
 from social_media_config import KEYWORDS, X
 
+# --- Load PH location reference data ---
+ref_cities = pd.read_csv('data/lookup/refcitymun.csv')
+ref_provs = pd.read_csv('data/lookup/refprovince.csv')
+ref_regs = pd.read_csv('data/lookup/refregion.csv')
+
+
+# Combine all location names
+PH_LOCATIONS = set(
+pd.concat([
+ref_cities['citymunDesc'],
+ref_provs['provDesc'],
+ref_regs['regDesc']
+], ignore_index=True).str.lower().str.strip().unique()
+)
+PH_LOCATIONS.update(['philippines', 'pilipinas', 'ph'])
+
 # Constants
 PH_TIME        = timezone(timedelta(hours=8))
 X_OUT          = 'data/raw-data/x_raw_disaster_posts.csv'
@@ -43,6 +59,10 @@ def scroll_page(driver, scroll_times=60, pause=1):
 def format_ts(dt: datetime) -> str:
     return dt.strftime('%Y-%m-%d %H:%M')
 
+def mentions_ph_location(text):
+    text = text.lower()
+    return any(loc in text for loc in PH_LOCATIONS)
+
 def process_x_cards(results: list,
                     identifier: str,
                     cards,
@@ -55,6 +75,8 @@ def process_x_cards(results: list,
         except:
             continue
         if not any(kw in txt.lower() for kw in KEYWORDS):
+            continue
+        if not mentions_ph_location(txt):
             continue
 
         # extract and convert timestamp

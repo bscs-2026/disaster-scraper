@@ -8,6 +8,8 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from data_preprocessing.clean_text import clean_text
 from data_preprocessing.extract_pagesource import extract_pagesource
 from data_preprocessing.format_columns import format_columns
+from data_preprocessing.location_filter import mentions_ph_location
+from dateutil import parser
 
 # INPUT_PATH = "data/raw-data/merged_raw_disaster_posts.csv"
 INPUT_PATH = "data/processed-data/raw_data_with_location_time.csv"
@@ -30,11 +32,18 @@ before = len(df)
 df = df.drop_duplicates(subset=["text_content"], keep="first").copy()
 print(f"   • removed exact dups: {before - len(df)}")
 
+
+print("🌏 Filtering non-Philippine context posts...")
+df = df[df["text_content"].apply(mentions_ph_location)]
+
 print("🔍 Extracting page source...")
 df["page_source"] = df["post_url"].apply(extract_pagesource)
 
 print("📊 Formatting columns...")
 df = format_columns(df)
+
+print("📌 Sorting by date-time (newest first)...")
+df = df.sort_values(by="date-time", ascending=False)
 
 df.to_csv(OUTPUT_PATH, index=False)
 print("✅ Done! Cleaned data saved to:", OUTPUT_PATH)

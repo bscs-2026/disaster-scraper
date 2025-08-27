@@ -11,6 +11,22 @@ from selenium.webdriver.chrome.options import Options
 import pandas as pd
 from social_media_config import KEYWORDS, FACEBOOK
 
+# --- Load PH location reference data ---
+ref_cities = pd.read_csv('data/lookup/refcitymun.csv')
+ref_provs = pd.read_csv('data/lookup/refprovince.csv')
+ref_regs = pd.read_csv('data/lookup/refregion.csv')
+
+
+# Combine all location names
+PH_LOCATIONS = set(
+pd.concat([
+ref_cities['citymunDesc'],
+ref_provs['provDesc'],
+ref_regs['regDesc']
+], ignore_index=True).str.lower().str.strip().unique()
+)
+PH_LOCATIONS.update(['philippines', 'pilipinas', 'ph'])
+
 # Constants
 PH_TIME     = timezone(timedelta(hours=8))
 FB_OUT      = 'data/raw-data/fb_raw_disaster_posts.csv'
@@ -48,6 +64,10 @@ def expand_see_more(driver, post):
         time.sleep(1)
     except:
         pass
+
+def mentions_ph_location(text):
+    text = text.lower()
+    return any(loc in text for loc in PH_LOCATIONS)
 
 def extract_utime(post):
     try:
@@ -87,7 +107,11 @@ def process_fb_articles(driver, results, identifier, is_search_query,
     count = 0
     for art in articles:
         text = extract_caption(driver, art)
-        if not text or not any(k in text.lower() for k in KEYWORDS):
+        if not text:
+            continue
+        if not any(k in text.lower() for k in KEYWORDS):
+            continue
+        if not mentions_ph_location(text):  
             continue
 
         ut = extract_utime(art)
