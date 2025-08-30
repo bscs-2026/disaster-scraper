@@ -1,2 +1,9 @@
 pandas
 selenium
+transformers
+torch
+rapidfuzz
+tqdm
+protobuf 
+sentencepiece 
+dateparser

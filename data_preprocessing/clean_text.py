@@ -6,8 +6,6 @@ import unicodedata as ud
 OUTPUT_DIR = 'data/cleaned-data'
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-df = pd.read_csv('data/raw-data/merged_raw_disaster_posts.csv')
-
 def normalize_fonted_unicode(text):
     return ''.join(
         c for c in ud.normalize('NFKD', text)
@@ -26,8 +24,8 @@ def clean_text(text):
     text = re.sub(r"[@#]\w+", "", text)                        # Remove mentions and hashtags
     text = text.encode("ascii", "ignore").decode("ascii")      # Remove emojis and non-ASCII
     text = re.sub(r"&\w+;", "", text)                          # Remove HTML entities like &amp;
-    # text = re.sub(r"[^\w\s:/]", "", text)                    # Preserve : / for date/time
-    text = re.sub(r"[^\w\s]", " ", text)                        # Keeps only alphanumeric + whitespace
+    text = re.sub(r"[-]", "", text)                            # Remove hyphens
+    text = re.sub(r"[^\w\s]", " ", text)                       # Keeps only alphanumeric + whitespace
     text = re.sub(r"\s+", " ", text).strip()                   # Remove excess whitespace
 
     # Skip if only punctuation or too short
