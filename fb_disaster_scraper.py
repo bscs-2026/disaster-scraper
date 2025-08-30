@@ -11,11 +11,10 @@ from selenium.webdriver.chrome.options import Options
 import pandas as pd
 from social_media_config import KEYWORDS, FACEBOOK
 
-# --- Load PH location reference data ---
+# Load PH location reference data 
 ref_cities = pd.read_csv('data/lookup/refcitymun.csv')
 ref_provs = pd.read_csv('data/lookup/refprovince.csv')
 ref_regs = pd.read_csv('data/lookup/refregion.csv')
-
 
 # Combine all location names
 PH_LOCATIONS = set(
