@@ -28,8 +28,8 @@ PH_LOCATIONS.update(['philippines', 'pilipinas', 'ph'])
 
 # Constants
 PH_TIME     = timezone(timedelta(hours=8))
-FB_OUT      = 'data/raw-data/fb_raw_disaster_posts.csv'
-MERGED_OUT  = 'data/raw-data/merged_raw_disaster_posts.csv'
+FB_OUT      = 'data/raw-data/batch-two/fb_raw_disaster_posts.csv'
+MERGED_OUT  = 'data/raw-data/batch-two/merged_raw_disaster_posts.csv'
 
 def init_driver() -> webdriver.Chrome:
     options = Options()
