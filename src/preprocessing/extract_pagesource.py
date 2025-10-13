@@ -1,6 +1,6 @@
 import re
 import numpy as np
-from data_preprocessing.location_filter import mentions_ph_location
+from preprocessing.location_filter import mentions_ph_location
 
 # Define mapping from raw usernames → formatted organization names
 SOURCE_NAME_MAP = {
