@@ -43,9 +43,7 @@ disaster-scraper/
 │   │   ├── drop_tail_near_duplicates.py
 │   │   └── data_cleaning_pipeline.py
 │   │
-│   ├── utils/
-│   │   ├── run_full_pipeline.py
-│   │   └── test_extract_datetime.py
+│   └─ run_full_pipeline.py
 │
 ├── requirements.txt
 ├── .gitignore
@@ -70,14 +68,14 @@ cd disaster-scraper
 ### 🔹 Run the entire end-to-end pipeline
 
 ```bash
-python3 src/utils/run_full_pipeline.py
+python3 src/run_full_pipeline.py
 ```
 
 ### 🔹 Skip specific phases
 
 ```bash
 example: datetime extraction only
-python3 src/utils/run_full_pipeline.py --skip-scrape --skip-ner-loc --skip-clean --skip-classify
+python3 src/run_full_pipeline.py --skip-scrape --skip-ner-loc --skip-clean --skip-classify
 ```
 
 | Flag                  | Effect                                 |
