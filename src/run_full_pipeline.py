@@ -1,18 +1,8 @@
-#!/usr/bin/env python3
-"""
-run_full_pipeline.py
---------------------
-End-to-end Disaster Data Pipeline:
-1️⃣ Scrape → 2️⃣ NER → 3️⃣ Clean → 4️⃣ Classify
-Each step can be skipped using CLI flags.
-"""
-
-import argparse
+import argparse, os, time
 from datetime import datetime
 from pathlib import Path
 import pandas as pd
 
-# --- Import pipeline modules ---
 from scraping.fb_disaster_scraper import scrape_facebook
 from scraping.x_disaster_scraper import scrape_x
 from preprocessing.data_cleaning_pipeline import run_cleaning_pipeline
@@ -152,9 +142,10 @@ def run_full_pipeline(skip_scrape=False, skip_ner_loc=False, skip_ner_datetime=F
     done = [k for k, v in steps.items() if v]
     skipped = [k for k, v in steps.items() if not v]
 
-    print(f"\n📋 Pipeline Summary → Completed: {', '.join(done) or 'None'} │ Skipped: {', '.join(skipped) or 'None'}")
+    print(f"\nPipeline Summary → Completed: {', '.join(done) or 'None'} │ Skipped: {', '.join(skipped) or 'None'}")
     print("\n🎉 Pipeline execution finished successfully.\n")
 
+    return final_path
 # ---------------------------------------------------------------------
 # CLI Entry Point
 # ---------------------------------------------------------------------
@@ -165,13 +156,38 @@ if __name__ == "__main__":
     parser.add_argument("--skip-ner-datetime", action="store_true", help="Skip NER (datetime extraction).")
     parser.add_argument("--skip-clean", action="store_true", help="Skip cleaning and use NER output as-is.")
     parser.add_argument("--skip-classify",  action="store_true", help="Skip disaster type classification")
+    parser.add_argument("--auto", action="store_true", help="Automatically upload to backend if pipeline succeeds.")
 
     args = parser.parse_args()
 
-    run_full_pipeline(
-        skip_scrape=args.skip_scrape,
-        skip_ner_loc=args.skip_ner_loc,
-        skip_ner_datetime=args.skip_ner_datetime,
-        skip_clean=args.skip_clean,
-        skip_classify=args.skip_classify,
-    )
+    try:
+        final_path = run_full_pipeline(
+            skip_scrape=args.skip_scrape,
+            skip_ner_loc=args.skip_ner_loc,
+            skip_ner_datetime=args.skip_ner_datetime,
+            skip_clean=args.skip_clean,
+            skip_classify=args.skip_classify,
+        )
+
+        if args.auto:
+            if final_path and os.path.exists(final_path):
+                from utils.upload_to_backend import ingest_new_data
+
+                print(f"\n🤖 Auto-upload enabled. Uploading → {final_path}")
+                try:
+                    ingest_new_data(final_path)
+                except Exception as e:
+                    print(f"Upload failed: {e}")
+                    print("Retrying in 5 seconds...")
+                    time.sleep(5)
+                    try:
+                        ingest_new_data(final_path)
+                        print("✅ Retry successful!")
+                    except Exception as e2:
+                        print(f"Second upload attempt failed: {e2}")
+            else:
+                print("No new final_output file from this run — skipping auto-upload.")
+
+    except Exception as e:
+        print(f"\nPipeline failed: {e}")
+        print("Auto-upload skipped due to pipeline error.")
