@@ -15,8 +15,8 @@ def format_columns(df):
         "text_content",
         "datetime",
         "location",
-        "url",
-        "disaster_type"
+        "disaster_type",
+        "url"
     ] if c in df.columns]
 
     return df[cols]
