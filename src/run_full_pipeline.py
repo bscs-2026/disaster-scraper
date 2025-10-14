@@ -23,7 +23,7 @@ from utils.file_ops import save_to_csv
 from preprocessing.format_columns import format_columns
 
 # True = if testing/debugging to save files per step; False = saves raw and final files only
-SAVE_INTERMEDIATE = False
+SAVE_INTERMEDIATE = True
 
 # ---------------------------------------------------------------------
 # Helper: timestamped filenames
@@ -100,12 +100,12 @@ def run_full_pipeline(skip_scrape=False, skip_ner_loc=False, skip_ner_datetime=F
         ner_df = extract_datetime(ner_df) 
         
         if SAVE_INTERMEDIATE:
-            ner_dt_path = timestamped("ner_with_locations_datetime", folder="data/interim")
+            ner_dt_path = timestamped("ner_with_datetime", folder="data/interim")
             save_to_csv(ner_df, ner_dt_path)
             print(f"✅ Datetime extraction complete → {ner_dt_path}")
     else:
         print("⚠️  Skipping NER (Datetime), loading latest combined output...")
-        ner_dt_latest = load_latest("ner_with_locations_datetime", folder="data/interim")
+        ner_dt_latest = load_latest("ner_with_datetime", folder="data/interim")
         ner_df = pd.read_csv(ner_dt_latest)
 
     # ----------------------------------

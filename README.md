@@ -1,39 +1,112 @@
-# Disaster Resilience Data Scraper & Cleaning Pipeline
+# 🌊 Disaster-Scraper
 
-> **Disaster-Resilience Chatbot** backend data-collection and preprocessing  
-> Collects real-time social-media posts about floods, landslides, earthquakes, typhoons, fires, etc., then normalizes and cleans them for downstream RAG + LLM use.
+**Automated Social Media Data Pipeline for Disaster Monitoring and Analysis**
 
-
-## Features
-
-- 🔍 **Multiplatform scraping**: Facebook, X, TikTok(discontinued)  
-- 🗄️ **CSV output**: raw & merged data in `data/raw-data/`  
-- 🧹 **Cleaning & formatting**: text normalization, date extraction, column standardization  
-- ⚙️ **Configurable sources** via `social_media_config.py`  
+This repository powers the **DisasterReady AI Chatbot** dataset pipeline — an end-to-end system that scrapes, cleans, and processes social-media posts (Facebook, X/Twitter) for disaster-related content in the Philippines. It integrates **XLM-RoBERTa-based NER** for extracting locations and datetimes, plus **zero-shot classification** for disaster type labeling.
 
 ---
 
-## Prerequisites
+## 🧩 Pipeline Overview
 
-- Python 3.8+  
-- Chrome Driver (for Selenium)  
-- A Git client
+```
+1️⃣ Scrape → 2️⃣ NER (Location, Datetime) → 3️⃣ Cleaning → 4️⃣ Classification → 5️⃣ Output
+```
+
+## Each phase can be executed independently or end-to-end using `run_full_pipeline.py`.
+
+## 📁 Repository Structure
+
+```
+disaster-scraper/
+├── data/
+│   ├── raw/          # raw scraped CSVs (Facebook/X)
+│   ├── interim/      # intermediate outputs (NER, cleaned, partial)
+│   ├── processed/    # final processed datasets (for QDRANT DB)
+│   └── lookup/       # PSGC or other lookup tables
+│
+├── src/
+│   ├── scraping/     # scrapers and API configs
+│   │   ├── fb_disaster_scraper.py
+│   │   ├── x_disaster_scraper.py
+│   │   └── social_media_config.py
+│   │
+│   ├── ner/          # Named Entity Recognition modules
+│   │   ├── extract_location.py
+│   │   ├── extract_datetime.py
+│   │   └── classify_disaster.py
+│   │
+│   ├── preprocessing/
+│   │   ├── clean_text.py
+│   │   ├── extract_pagesource.py
+│   │   ├── location_filter.py
+│   │   ├── format_columns.py
+│   │   ├── drop_tail_near_duplicates.py
+│   │   └── data_cleaning_pipeline.py
+│   │
+│   ├── utils/
+│   │   ├── run_full_pipeline.py
+│   │   └── test_extract_datetime.py
+│
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
 
 ---
 
-## Installation
+## ⚙️ Setup & Installation
+
+### Clone the repository and install dependencies
 
 ```bash
-# 1. Clone this repo
-git clone https://github.com/your-org/disaster-scraper.git
+git clone https://github.com/<yourusername>/disaster-scraper.git
 cd disaster-scraper
+```
 
-# 2. Create & activate virtual environment
-python3 -m venv .venv
-source .venv/bin/activate    # macOS/Linux
-.\.venv\Scripts\activate     # Windows
+---
 
-# 3. Install dependencies
-pip install --upgrade pip
-pip install -r requirements.txt
+## 🚀 Running the Pipeline
 
+### 🔹 Run the entire end-to-end pipeline
+
+```bash
+python3 src/utils/run_full_pipeline.py
+```
+
+### 🔹 Skip specific phases
+
+```bash
+example: datetime extraction only
+python3 src/utils/run_full_pipeline.py --skip-scrape --skip-ner-loc --skip-clean --skip-classify
+```
+
+| Flag                  | Effect                                 |
+| --------------------- | -------------------------------------- |
+| `--skip-scrape`       | Uses existing CSVs instead of scraping |
+| `--skip-ner-loc`      | Skips location extraction              |
+| `--skip-ner-datetime` | Skips datetime extraction              |
+| `--skip-clean`        | Skips text cleaning and filtering      |
+| `--skip-classify`     | Skips disaster-type classification     |
+
+---
+
+## 🤖 Models Used
+
+| Function                | Model                             | Source      |
+| ----------------------- | --------------------------------- | ----------- |
+| Location Extraction     | `Davlan/xlm-roberta-base-ner-hrl` | HuggingFace |
+| Datetime Extraction     | `programmersilvanus/ner-xlmr`     | HuggingFace |
+| Disaster Classification | `joeddav/xlm-roberta-large-xnli`  | HuggingFace |
+
+---
+
+## 📊 Output Columns
+
+| Column               | Description                   |
+| -------------------- | ----------------------------- |
+| `source`             | Platform (Facebook/X)         |
+| `text_content`       | Cleaned post text             |
+| `event_time_primary` | Normalized datetime           |
+| `location`           | Extracted Philippine location |
+| `disaster_type`      | Predicted disaster category   |
+| `url`                | Post source link              |

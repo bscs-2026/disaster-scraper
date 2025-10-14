@@ -3,6 +3,8 @@ from preprocessing.clean_text import clean_text
 from preprocessing.extract_pagesource import extract_pagesource
 from preprocessing.format_columns import format_columns
 from preprocessing.location_filter import mentions_ph_location
+from preprocessing.drop_tail_near_duplicates import drop_tail_near_duplicates
+
 
 def run_cleaning_pipeline(input_data):
     """
@@ -23,6 +25,10 @@ def run_cleaning_pipeline(input_data):
     before = len(df)
     df = df.drop_duplicates(subset=["text_content"], keep="first").copy()
     print(f"Dropped exact duplicates: {before - len(df)}")
+
+    before = len(df)
+    df = drop_tail_near_duplicates(df, "text_content")
+    print(f"Dropped near-duplicates (same prefix): {before - len(df)}")
 
     df = df[df["text_content"].apply(mentions_ph_location)].copy()
     print(f"Dropped non-PH context posts: {before - len(df)}")

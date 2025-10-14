@@ -1,6 +1,5 @@
 import pandas as pd
 
-# load lookup tables
 ref_cities = pd.read_csv("data/lookup/refcitymun.csv")
 ref_provs  = pd.read_csv("data/lookup/refprovince.csv")
 ref_regs   = pd.read_csv("data/lookup/refregion.csv")

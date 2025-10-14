@@ -23,6 +23,8 @@ def clean_text(text):
     text = re.sub(r"https?://\S+|www\.\S+", "", text)         # Remove URLs
     text = re.sub(r"<.*?>", "", text)                         # Remove HTML tags
     text = re.sub(r"&\w+;", "", text)                         # Remove HTML entities like &amp;
+    text = re.sub(r"[-=*_]{3,}", " ", text)                   # Remove visual separators like "====", "-----", "***"
+    text = re.sub(r"(\.\s*){3,}", " ", text)                  # Remove long dot or spaced-dot patterns ("....." or ". . . . .")
     text = text.encode("ascii", "ignore").decode("ascii")     # Remove emojis and non-ASCII chars
     text = re.sub(r"\s+", " ", text).strip()                  # Normalize spacing
     text = text.lower()                                       # Lowercase (preserve hashtags)

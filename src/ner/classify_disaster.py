@@ -34,13 +34,17 @@ DISASTER_LABELS = [
 
 KEYWORDS = {
     "rainfall / flood": [
+        "rain", "rains", "rainfall", "rainshower", "rain showers", "heavy rain",
+        "downpour", "monsoon", "habagat", "amihan", "lpa", "itcz",
+        "weather system", "weather update", "weather advisory", "weather alert",
         "rainfall warning","orange rainfall","yellow rainfall","red rainfall",
-        "orange warning","yellow warning","red warning", "thuderstorm advisory",
+        "orange warning","yellow warning","red warning",
         "rainfall alert","rainfall advisory","rainfall watch",
-        "rain","ulan","pagulan","habagat","amihan","lpa","monsoon",
-        "thunder","kulog","kidlat","lightning","rainshower","gusty",
-        "baha","lunop","pagbaha","paglunop","flood","flooding", "floodwaters", "overflow","pagbaha",
-        "storm surge","coastal surge","daluyong","sea surge", "apaw", "pagapaw"
+        "thunderstorm","thunderstorms","thunderstorm watch","thunderstorm advisory",
+        "thunderstorm warning","thunderstorm information",
+        "kulog","kidlat","lightning","storm surge","coastal surge","daluyong",
+        "gusty","baha","lunop","pagbaha","paglunop","flood","flooding",
+        "overflow","pag-apaw","apaw","pagapaw","inundation"
     ],
     "landslide": ["landslide","pagguho","mudslide","nahulog","slope","erosion"],
     "earthquake": ["lindol","linog","pagyanig","nangurog","magnitude","aftershock","epicenter"],
@@ -185,8 +189,8 @@ def classify_disaster(df_data: pd.DataFrame) -> pd.DataFrame:
 
     # 5️⃣ Append to DataFrame
     df_data["disaster_type"] = disaster_type
-    df_data["disaster_scores"] = disaster_scores
-    df_data["disaster_detected_keywords"] = disaster_keywords
+    # df_data["disaster_scores"] = disaster_scores
+    # df_data["disaster_detected_keywords"] = disaster_keywords
 
     print("\n📊 Disaster Type Counts:")
     print(df_data["disaster_type"].value_counts())

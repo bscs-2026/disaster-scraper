@@ -60,6 +60,21 @@ DIRECTIONS = {
     "kanluran", "kanlurang", "amihan", "habagat", "habagatan"
 }
 
+VOLCANO_OVERRIDES = {
+    "bulkang taal": {"canonical_name": "Taal Volcano", "province": "Batangas"},
+    "taal volcano": {"canonical_name": "Taal Volcano", "province": "Batangas"},
+    "bulkang mayon": {"canonical_name": "Mayon Volcano", "province": "Albay"},
+    "mayon volcano": {"canonical_name": "Mayon Volcano", "province": "Albay"},
+    "bulkang bulusan": {"canonical_name": "Bulusan Volcano", "province": "Sorsogon"},
+    "bulusan volcano": {"canonical_name": "Bulusan Volcano", "province": "Sorsogon"},
+    "bulkang kanlaon": {"canonical_name": "Kanlaon Volcano", "province": "Negros Occidental"},
+    "kanlaon volcano": {"canonical_name": "Kanlaon Volcano", "province": "Negros Occidental"},
+    "bulkang pinatubo": {"canonical_name": "Mount Pinatubo", "province": "Zambales"},
+    "mount pinatubo": {"canonical_name": "Mount Pinatubo", "province": "Zambales"},
+    "bulkang hibok-hibok": {"canonical_name": "Mount Hibok-Hibok", "province": "Camiguin"},
+    "hibok-hibok volcano": {"canonical_name": "Mount Hibok-Hibok", "province": "Camiguin"},
+}
+
 # ---------------------------------------------------------------------
 # Text Preprocessing
 # ---------------------------------------------------------------------
@@ -357,16 +372,53 @@ def extract_locations(df_data: pd.DataFrame, text_col: str, psgc: Dict, ner_pipe
                       location_raw="location_raw", location="location"):
     if text_col not in df_data.columns:
         raise KeyError(f"Column '{text_col}' not found in DataFrame.")
+
     iterator = tqdm(df_data.itertuples(index=False, name=None), total=len(df_data), desc="Extracting locations") if show_progress else df_data.itertuples(index=False, name=None)
 
     all_matches = []
     col_idx = list(df_data.columns).index(text_col)
+
     for row in iterator:
         text = str(row[col_idx]) if row[col_idx] else ""
         ents = extract_entities_xlmr(text, ner_pipeline)
-        rough = [match_psgc(ent, psgc) for ent in ents]
+
+        # 🌋 --- Volcano location override fix (robust) ---
+        corrected_ents = []
+        volcano_fixes = 0  # ✅ initialize counter inside each loop
+
+        for ent in ents:
+            key = ent.lower().strip()
+
+            # --- 1️⃣ Normalize punctuation and spacing ---
+            key = re.sub(r"[.,\-_/]+", " ", key)  # e.g. "mt.taal" → "mt taal"
+            key = re.sub(r"\s+", " ", key).strip()
+
+            # --- 2️⃣ Handle concatenated forms like "mayonvolcano" or "bulkangkanlaon" ---
+            if "volcano" not in key and re.search(r"(mayon|taal|bulusan|kanlaon|pinatubo|hibok)", key):
+                key = re.sub(r"(mayon|taal|bulusan|kanlaon|pinatubo|hibok)(volcano)?", r"\1 volcano", key)
+
+            # --- 3️⃣ Try to match any volcano override substring ---
+            matched = None
+            for v_key, info in VOLCANO_OVERRIDES.items():
+                pattern = r"\b" + re.escape(v_key) + r"\b"
+                if re.search(pattern, key):
+                    matched = info
+                    break
+
+            if matched:
+                corrected_ents.append(matched["province"])
+                volcano_fixes += 1
+            else:
+                corrected_ents.append(ent)
+
+        if volcano_fixes > 0:
+            print(f"🌋 Applied {volcano_fixes} volcano override(s) for text: {text[:80]}...")
+
+        # Continue normal PSGC matching
+        rough = [match_psgc(ent, psgc) for ent in corrected_ents]
         context_city_code = next((m["code"] for m in rough if m.get("level") == "citymun" and m.get("code")), None)
-        matches = [match_psgc(ent, psgc, context_city_code) for ent in ents]
+        matches = [match_psgc(ent, psgc, context_city_code) for ent in corrected_ents]
+
         all_matches.append(_clean_matches(matches))
 
     out = df_data.copy()
@@ -374,6 +426,7 @@ def extract_locations(df_data: pd.DataFrame, text_col: str, psgc: Dict, ner_pipe
     out[location] = out[location_raw].apply(lambda x: "; ".join(f"{m.get('matched_name')} ({m.get('level')})" for m in x if m.get("matched_name")) if x else "")
     if drop_empty:
         out = out[out[location_raw].apply(lambda x: len(x) > 0)].reset_index(drop=True)
+
     return out
 
 # ---------------------------------------------------------------------
