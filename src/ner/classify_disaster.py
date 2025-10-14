@@ -196,6 +196,9 @@ def classify_disaster(df_data: pd.DataFrame) -> pd.DataFrame:
     print(df_data["disaster_type"].value_counts())
 
     print(f"\n✅ Disaster classification complete in {(time.time() - start_time)/60:.2f} min")
+    
+    # 6️⃣ Drop rows where disaster_type == "other"
+    df_data = df_data[df_data["disaster_type"] != "other"].copy()
 
     return df_data
 
