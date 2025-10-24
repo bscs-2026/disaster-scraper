@@ -1,13 +1,15 @@
 #!/bin/bash
-# --------------------------------------------
-# Disaster Scraper Pipeline - macOS Cron Wrapper
-# --------------------------------------------
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+cd "$SCRIPT_DIR" || exit
+PYTHON_PATH="/usr/local/bin/python3"
+LOG_FILE="$SCRIPT_DIR/logs/pipeline_cron.log"
 
-cd "/Users/casseygempesaw/Desktop/Desktop - Cassey’s Mac/Thesis/disaster-scraper"
+mkdir -p "$SCRIPT_DIR/logs"
 
-# If using a virtualenv, uncomment:
-# source venv/bin/activate
+echo "[$(date)] Starting Disaster Pipeline..."
+echo "[$(date)] Starting Disaster Pipeline..." >> "$LOG_FILE" 2>&1
 
-echo "[$(date)] Starting Disaster Pipeline..." >> logs/pipeline_cron.log 2>&1
-/usr/local/bin/python3 run_full_pipeline.py --auto >> logs/pipeline_cron.log 2>&1
-echo "[$(date)] Pipeline finished." >> logs/pipeline_cron.log 2>&1
+"$PYTHON_PATH" "$SCRIPT_DIR/src/run_full_pipeline.py" --auto 2>&1 | tee -a "$LOG_FILE"
+
+echo "[$(date)] Pipeline finished."
+echo "[$(date)] Pipeline finished." >> "$LOG_FILE" 2>&1
